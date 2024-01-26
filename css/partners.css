@@ -35,6 +35,10 @@ body,html{
     background-color:var(--color7);
 }
 
+body.active{
+    overflow: hidden;
+}
+
 
 #overlay{
     position: fixed;
@@ -185,7 +189,7 @@ div#partner-content{
 }
 
 h3 b{
-    color: orangered;
+    color: var(--color3);
 }
 
 #image-container{
@@ -207,7 +211,7 @@ h3 b{
 }
 
 .client-feedback-session b,#ellipsis{
-    color: orangered;
+    color: var(--color3);
     font-size: 40px;
 }
 
@@ -537,8 +541,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color:var(--color3);
-    color: var(--color1);
+    background-color:var(--color6);
+    color: var(--color5);
     font-size: 18px;
 
 }
@@ -550,7 +554,7 @@ footer{
 }
 
 .images{
-    height: 40px;
+    height: 35px;
 }
 
 

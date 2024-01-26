@@ -5,6 +5,7 @@ const icon = document.getElementById("icon");
 const logo = document.getElementById("logo");
 const overlay = document.getElementById("overlay");
 const slide = document.getElementById("slider");
+const body = document.querySelector("body");
 
 
 
@@ -18,6 +19,7 @@ navBtn.onclick = ()=>{
     icon.classList.toggle("active");
     logo.classList.toggle("active");
     overlay.classList.toggle("active");
+    body.classList.toggle("active");
 }
 
 overlay.onclick = ()=>{
@@ -30,6 +32,7 @@ overlay.onclick = ()=>{
     icon.classList.remove("active");
     logo.classList.remove("active");
     overlay.classList.remove("active");
+    body.classList.remove("active");
 
 }
 
