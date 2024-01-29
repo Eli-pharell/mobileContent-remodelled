@@ -7,7 +7,7 @@
     --color6:#ffc5a1;
     --color7: #faf3ee;
     --aside-width:95px;
-    --mobile-aside-width:15px;
+    --mobile-aside-width:20px;
     --large-text:30px;
 }
 
@@ -747,6 +747,21 @@ footer{
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
     }
+
+    .support-statements{
+        height: 400px;
+    }
+
+    .swiper-pagination{
+        bottom: 1rem !important;
+     }
+    
+     .swiper-pagination-bullet-active{
+        background-color: var(--color1) !important;
+     }
+     .swiper-pagination-bullet{
+        padding: 6px;
+     }
     
     
     
