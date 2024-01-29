@@ -717,7 +717,11 @@ footer{
     
     
     nav>*{
-        margin: 0 0 0 1.3rem;
+        margin: 0 0 0 1.5rem;
+    }
+
+    #icon{
+        display: none;
     }
     
     .lines{
