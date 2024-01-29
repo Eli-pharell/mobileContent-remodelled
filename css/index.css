@@ -754,6 +754,7 @@ footer{
 
     .support-statements{
         height: 30px;
+        width: 100%;
     }
 
     .swiper-pagination{
