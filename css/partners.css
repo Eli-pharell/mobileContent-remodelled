@@ -328,6 +328,10 @@ h3 b{
      50% 70%, 20% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
+.hidden-context{
+    display: none;
+}
+
 
 #partner-content{
     text-align: center;
@@ -388,7 +392,7 @@ h3 b{
 #slider{
     display: flex;
     height: 100px;
-    animation: slide 30s infinite linear;
+    animation: slide 25s infinite linear;
 }
 
 footer{
@@ -660,6 +664,126 @@ footer{
         width: calc(100% - var(--mobile-aside-width));
     }
     
+    .testimonial{
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        background-color: var(--color1);
+        width: 96%;
+        column-gap: 2rem;
+        scale: 0.95;
+    }
+    
+    .testimonial:not(:last-child){
+        margin: 0 auto 10rem auto;
+    }
+    
+    .testimonial:last-child{
+        margin: 0 auto;
+    }
+    
+    
+    .testimonial::after{
+        content: '';
+        position: absolute;
+        padding: 50px;
+        right: -1rem;
+        bottom: -1rem;
+        border-right: 2px solid orangered;
+        border-bottom: 2px solid orangered;
+    }
+    
+    .testimonial::before{
+        content: '';
+        position: absolute;
+        padding: 50px;
+        top: -1rem;
+        left: -1rem;
+        border-left: 2px solid orangered;
+        border-top: 2px solid orangered;
+    }
+    
+    .rectangle{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: -1rem;
+        bottom: -1rem;
+        border: 2px solid orangered;
+    }
+    
+    
+    .testimonial>*{
+        width:100%;
+    }
+    .testimonial-image{
+        width:100%;
+        height: 100%;
+    }
+    
+    .client-name{
+        color: orangered;
+        text-decoration: underline;
+        letter-spacing: 8px;
+        word-spacing: 4px;
+    }
+    
+    .context{
+        font-size: 1.4rem;
+        padding: 0 0 5rem 1rem;
+        width: 100%;
+        height: 40%;
+    }
+    
+    
+    .client-socials{
+        position: absolute;
+        display: flex;
+        flex-flow: row;
+        gap: 1rem;
+        left:10px;
+        top: 95%;
+    }
+    
+    .icon{
+        color: black;
+        font-size: 20px ;
+        transition: 180ms;
+    }
+    
+    .icon:hover{
+        color: orangered;
+    }
+    
+    .icon:focus{
+        color: orangered;
+    }
+    
+    .rating{
+        display: flex;
+        column-gap: .8rem;
+        margin-top: 2rem;
+    }
+    .stars{
+        background-color: orangered;
+        width: 5%;
+        height: .5%;
+        padding: 18px;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 80% 91%,
+         50% 70%, 20% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    .main-context{
+        display: none;
+    }
+    
+    .hidden-context{
+        display: unset;
+    }
+
+    #slider{
+        height: 80px;
+    }
     
     
     footer{
