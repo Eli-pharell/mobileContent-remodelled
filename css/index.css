@@ -344,7 +344,7 @@ section{
 
 
 .support-statements p{
-    margin: 1rem 0 2.5rem 0;
+    margin: 1rem 0 3rem 0;
     line-height: 1.5rem;
 }
 
@@ -748,8 +748,12 @@ footer{
         width: calc(100% - var(--mobile-aside-width));
     }
 
+    #customer-support{
+        gap: 3rem;
+    }
+
     .support-statements{
-        height: 360px;
+        height: 30px;
     }
 
     .swiper-pagination{
