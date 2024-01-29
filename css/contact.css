@@ -671,7 +671,7 @@ footer{
         padding:  1.5rem 0 0 1rem;
         background-color: var(--color2);
         z-index: 2;
-        box-shadow: 10px 0 10px -10px rgb(0, 0, 0,0.7);
+        box-shadow: 0 10px 10px -10px rgb(0, 0, 0,0.7);
         font-size: 17px;
         overflow: hidden;
     }
