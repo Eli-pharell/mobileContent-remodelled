@@ -430,7 +430,8 @@ footer{
 .col1,
 .col2,
 .col3,
-.col3 a{
+.col3 a,
+.col2 a{
     color: var(--color1);
 }
 

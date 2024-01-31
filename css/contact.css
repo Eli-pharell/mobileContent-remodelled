@@ -411,7 +411,8 @@ footer{
 .col1,
 .col2,
 .col3,
-.col3 a{
+.col3 a,
+.col2 a{
     color: var(--color1);
 }
 
@@ -675,7 +676,7 @@ footer{
         row-gap: 2rem;
         border-radius: 20px;
         color: var(--color1);
-        padding:  1.5rem 0 0 1rem;
+        padding:  1.5rem 0 0 .5rem;
         background-color: var(--color2);
         z-index: 2;
         box-shadow: 0 10px 10px -10px rgb(0, 0, 0,0.7);
