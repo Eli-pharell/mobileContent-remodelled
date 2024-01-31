@@ -652,6 +652,11 @@ footer{
         margin: 0 0 0 -1.5rem;
     }
     
+    .testimonial::after,
+    .testimonial::before,
+    .rectangle{
+        display: none;
+    }
 
     
     
