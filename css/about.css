@@ -276,6 +276,7 @@ section{
 }
 .swiper-button-next, .swiper-button-prev{
    color: var(--color3) !important;
+   top:45% !important;
 }
 
 
@@ -582,6 +583,11 @@ footer{
     .profile{
         width: 100% !important;
         height: 70% !important;
+     }
+
+     .swiper-button-next, .swiper-button-prev{
+        color: var(--color3) !important;
+        top:38% !important;
      }
     
     
