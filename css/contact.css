@@ -686,12 +686,16 @@ footer{
 
     .sub-container2{
         position: relative;
-        margin:-.5rem 0 0 0;
-        padding:  6rem 0 0 1rem;
+        margin:-1rem 0 0 0;
+        padding:  8rem 0 0 1rem;
         border-radius:  0 0 20px 20px;
         color: var(--color5);
         background-color: var(--color1);
         border-bottom: 3px solid var(--color3);
+    }
+
+    #form-logo{
+        top: 2.2rem;
     }
 
     table tr,

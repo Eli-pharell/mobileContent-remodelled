@@ -177,6 +177,7 @@ section{
 div#partner-content{
     text-align: center;
     margin: 0 0 5rem 0;
+    background-color: black;
 }
 
 #partner-content h3{
@@ -194,12 +195,9 @@ h3 b{
 
 #image-container{
     width: 100%;
-    height: fit-content;
+    height: 400px;
+    background-color: green;
 }
-#mobile-banner{
-    display: none;
-}
-
 
 #partner-image{
     object-fit: contain;
@@ -212,6 +210,7 @@ h3 b{
     margin-top: 15%;
     font-weight: normal;
     text-indent: 30px;
+    background-color: blue;
 }
 
 .client-feedback-session b,#ellipsis{
@@ -223,6 +222,7 @@ h3 b{
     width: 100%;
     padding: 4rem 0 10rem 0;
     margin: 1rem 0 0 0;
+    background-color: red;
 }
 
 .testimonial{
@@ -412,7 +412,7 @@ footer{
     flex-wrap: wrap;
     width: 100%;
     padding: 0 1rem;
-    gap: 2rem 1.5rem;
+    gap: 1.5rem 1.5rem;
     height: 80%;
     margin: 0 0 1rem 0;
 }
@@ -434,8 +434,7 @@ footer{
 .col1,
 .col2,
 .col3,
-.col3 a,
-.col2 a{
+.col3 a{
     color: var(--color1);
 }
 
@@ -652,11 +651,6 @@ footer{
         margin: 0 0 0 -1.5rem;
     }
     
-    .testimonial::after,
-    .testimonial::before,
-    .rectangle{
-        display: none;
-    }
 
     
     
@@ -674,23 +668,9 @@ footer{
         width: calc(100% - var(--mobile-aside-width));
     }
 
-    #partner-content h3{
-        font-size: 30px;
-        font-weight: normal;
-    }
-    
-    #partner-content p{
-        font-size: 16px !important;
-    }
-
-    #mobile-banner{
-        display: unset;
-        object-fit: contain;
-        width: 100%;
-    }
-    
-    
-    #partner-image{
+    .testimonial::after,
+    .testimonial::before,
+    .rectangle{
         display: none;
     }
     
@@ -818,7 +798,7 @@ footer{
     
     
     footer{
-        padding: 1rem  0 0 5px;
+        padding: 1rem  0 0;
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
         height: fit-content;
