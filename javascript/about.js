@@ -40,7 +40,7 @@ var swiper = new Swiper(".swiper", {
 
     breakpoints:{
       1200:{
-        slidesPerView: 3.96,
+        slidesPerView: 3.9,
     spaceBetween: 19,
     loop: false,
 
@@ -60,28 +60,9 @@ var swiper = new Swiper(".swiper", {
     },
       },
 
-      1150:{
-        slidesPerView:3.8,
-        spaceBetween: 19,
-        loop: false,
-    
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets:true,
-          clickable: true,
-        },
-        
-        navigation:{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-    
-        keyboard:{
-          enabled:true,
-        },
-      },
-      900:{
-        slidesPerView:3.37,
+
+      992:{
+        slidesPerView:2.744,
         spaceBetween: 19,
         loop: false,
     
@@ -101,8 +82,8 @@ var swiper = new Swiper(".swiper", {
         },
       },
 
-      700:{
-        slidesPerView:3,
+      768:{
+        slidesPerView:2.46,
         spaceBetween: 19,
         loop: false,
     
@@ -122,8 +103,8 @@ var swiper = new Swiper(".swiper", {
         },
       },
 
-      550:{
-        slidesPerView:2.39,
+      576:{
+        slidesPerView:2.6,
         spaceBetween: 19,
         loop: false,
     
@@ -144,7 +125,7 @@ var swiper = new Swiper(".swiper", {
       },
 
       480:{
-        slidesPerView:2,
+        slidesPerView:1.04,
         spaceBetween: 19,
         loop: false,
     

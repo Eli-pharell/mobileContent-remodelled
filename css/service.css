@@ -279,7 +279,7 @@ section{
     flex-wrap: wrap;
     width: 100%;
     padding: 0 1rem;
-    gap: 1.5rem 1.5rem;
+    gap: 2rem 1.5rem;
     height: 80%;
     margin: 0 0 1rem 0;
 }
@@ -435,6 +435,11 @@ section{
 
 
 @media (max-width:1200px){
+
+    #service-header{
+        font-size:30px;
+    }
+
     #main-footer-container>*{
         width:30%;
     }
@@ -457,6 +462,11 @@ section{
     #main-footer-container>*{
         width:clamp(55%,60%,65%)
     }
+
+    #service-header{
+        font-size:28px;
+    }
+
     .service-tab{
         width: clamp(45%,60%,70%);
     }
@@ -546,6 +556,10 @@ section{
     section{
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
+    }
+
+    #service-header{
+        font-size:30px;
     }
     
     .service-tab{

@@ -8,7 +8,7 @@
     --color7: #faf3ee;
     --aside-width:95px;
     --mobile-aside-width:25px;
-    --large-text:30px;
+    --large-text:clamp(20px, 30px, 35px)
 }
 
 *{
@@ -410,7 +410,7 @@ footer{
     flex-wrap: wrap;
     width: 100%;
     padding: 0 1rem;
-    gap: 1.5rem 1.5rem;
+    gap: 2rem 1.5rem;
     height: 80%;
     margin: 0 0 1rem 0;
 }
@@ -623,22 +623,84 @@ footer{
 }
 
 @media (max-width:992px){
+    :root{
+        --large-text:28px;
+    }
+
     #main-footer-container>*{
         width:45%;
     }
     .support-statements{
         width: 48%;
     }
+    #trending-container{
+        display: flex;
+        column-gap: 2rem;
+        margin: 0 auto;
+        height: 450px;
+    }
+    
+    #trending-statement{
+        color: var(--color5);
+        font-size: var(--large-text);
+        width: 40%;
+    }
+    
+    #trending-main-slider{
+        width: 60%;
+    }
+    
+    #trending-statement p{
+        font-size: calc(var(--large-text) - 10px);
+        margin-top: 1rem;
+    }
+    
+    
+    #trendin-images{
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 10px;
+    }
+    .trend{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
 }
 
 @media (max-width:768px){
+
+    :root{
+        --large-text:26px;
+    }
+
     #main-footer-container>*{
         width:clamp(55%,60%,65%)
     }
     .support-statements{
         width: 60%;
     }
+    #trending-container{
+        width: 90%;
+        flex-flow: column;
+        gap: 2rem;
+        height: fit-content;
+    }
+    
+    #trending-statement{
+        width: 100%;
+    }
+    
+    #trending-main-slider{
+        width: 100%;
+    }
 
+    body{
+        background-color: green;
+    }
 }
 
 @media (max-width:576px){

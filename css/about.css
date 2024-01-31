@@ -229,7 +229,7 @@ section{
 
 .profile{
    position: relative;
-   width: 24% !important;
+   width: 28% !important;
    height: 80% !important;
    border-radius: 10px;
    border: 1px solid black;
@@ -294,7 +294,7 @@ footer{
     flex-wrap: wrap;
     width: 100%;
     padding: 0 1rem;
-    gap: 1.5rem 1.5rem;
+    gap: 2rem 1.5rem;
     height: 80%;
     margin: 0 0 1rem 0;
 }
@@ -453,22 +453,52 @@ footer{
     #main-footer-container>*{
         width:30%;
     }
+
+    .profile{
+        width: 34% !important;
+     }
+
+     body{
+        background-color: black;
+     }
+
 }
+
+
 
 @media (max-width:992px){
     #main-footer-container>*{
         width:45%;
     }
+
+    .profile{
+        width: 45% !important;
+     }
+
+     body{
+        background-color: yellow;
+     }
 }
 
 @media (max-width:768px){
     #main-footer-container>*{
         width:clamp(55%,60%,65%)
     }
+    .profile{
+        width: 60% !important;
+     }
 
+          body{
+        background-color: red;
+     }
 }
 
 @media (max-width:576px){
+
+    .profile{
+        width: 96% !important;
+     }
+
     #main-footer-container>*{
         width:90%;
     }
@@ -502,9 +532,15 @@ footer{
         height: calc(var(--img-height) - 2px);
     }
 
+    body{
+        background-color: blue;
+     }
+
 }
 
 @media (max-width:480px){
+
+
     aside{
         width: var(--mobile-aside-width);
     }
@@ -550,6 +586,10 @@ footer{
         width: calc(100% - var(--mobile-aside-width));
     }
     
+    .profile{
+        width: 100% !important;
+        height: 70% !important;
+     }
     
     
     footer{
