@@ -344,7 +344,7 @@ table textarea:focus{
     cursor: pointer;
     color: var(--color1);
     font-size: 20px;
-    padding: 10px 20px  ;
+    padding: 10px 20px;
     background-image: url('/images/background/button.png');
     background-color: var(--color2);
     background-size: 300%;
@@ -644,6 +644,10 @@ footer{
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
     }
+
+    #main-contact-header{
+        font-size: 20px;
+    }
     
     #contact-container{
         height: fit-content;
@@ -661,6 +665,9 @@ footer{
         box-shadow: 10px 15px 40px -15px rgba(2, 2, 81, 0.4);
     }
 
+    #contact-header{
+        font-size: 17px;
+    }
     .sub-container1{
         position: relative;
         display: flex;
@@ -672,14 +679,14 @@ footer{
         background-color: var(--color2);
         z-index: 2;
         box-shadow: 0 10px 10px -10px rgb(0, 0, 0,0.7);
-        font-size: 17px;
+        font-size: 15px;
         overflow: hidden;
     }
 
     .sub-container2{
         position: relative;
-        margin:-1rem 0 0 0;
-        padding:  6rem 0 9rem 1rem;
+        margin:-.5rem 0 0 0;
+        padding:  6rem 0 17rem 1rem;
         border-radius:  0 0 20px 20px;
         color: var(--color5);
         background-color: var(--color1);
@@ -692,6 +699,14 @@ footer{
     width: 95%;
 }
 
+
+    table tr{
+        height: 6rem;
+    }
+
+    table textarea{
+        height: 7rem;
+    }
     #form-socials{
         margin-top: -1rem;
         width: 100%;
@@ -700,10 +715,14 @@ footer{
         column-gap: 1.4rem;
         padding:  0 2rem 1rem 0;
     }
+
+    #submit{
+        scale: 0.8;
+    }
     
     
     footer{
-        padding: 1rem  0 0;
+        padding: 1rem 0 0 5px;
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
         height: fit-content;

@@ -593,7 +593,7 @@ footer{
     
     
     footer{
-        padding: 1rem  0 0;
+        padding: 1rem  0 0 5px;
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
         height: fit-content;
