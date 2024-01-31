@@ -588,6 +588,7 @@ footer{
      .swiper-button-next, .swiper-button-prev{
         color: var(--color3) !important;
         top:38% !important;
+        display: none !important;
      }
     
     
