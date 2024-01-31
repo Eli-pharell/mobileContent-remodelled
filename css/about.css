@@ -575,6 +575,10 @@ footer{
     .about-statements{
         font-size: 85%;
     }
+
+    .about-statements h3{
+        font-size: 25px;
+    }
     .profile{
         width: 100% !important;
         height: 70% !important;
