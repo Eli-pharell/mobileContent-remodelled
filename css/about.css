@@ -458,10 +458,6 @@ footer{
         width: 34% !important;
      }
 
-     body{
-        background-color: black;
-     }
-
 }
 
 
@@ -475,9 +471,6 @@ footer{
         width: 45% !important;
      }
 
-     body{
-        background-color: yellow;
-     }
 }
 
 @media (max-width:768px){
@@ -486,10 +479,6 @@ footer{
     }
     .profile{
         width: 60% !important;
-     }
-
-          body{
-        background-color: red;
      }
 }
 
@@ -531,10 +520,6 @@ footer{
     .images:last-child{
         height: calc(var(--img-height) - 2px);
     }
-
-    body{
-        background-color: blue;
-     }
 
 }
 
@@ -586,6 +571,10 @@ footer{
         width: calc(100% - var(--mobile-aside-width));
     }
     
+
+    .about-statements{
+        font-size: 85%;
+    }
     .profile{
         width: 100% !important;
         height: 70% !important;

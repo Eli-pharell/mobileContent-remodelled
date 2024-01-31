@@ -698,9 +698,6 @@ footer{
         width: 100%;
     }
 
-    body{
-        background-color: green;
-    }
 }
 
 @media (max-width:576px){
