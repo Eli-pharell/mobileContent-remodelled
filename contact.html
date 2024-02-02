@@ -99,22 +99,22 @@
                         <table>
                             <tr>
                                 <td id="name"><h3>Name </h3></td>
-                                <td><input type="text" for="name"></td>
+                                <td><input type="text" for="name" name="Name" required></td>
                             </tr>
                             <tr>
                                 <td><h3>Email</h3></td>
-                                <td><input type="text" id="emai"></td>
+                                <td><input type="email" id="email" name="Email" required></td>
                             </tr>
                             <tr>
                                 <td><h3>Phone</h3></td>
-                                <td><input type="text" id="phone"></td>
+                                <td><input type="tel" id="phone" name="Phone" required></td>
                             </tr>
                             <tr id="message-row">
                                 <td><h3>Message</h3></td>
-                                <td><textarea id="message" placeholder="Write your message..."></textarea></td>
+                                <td><textarea name="Message" id="message" placeholder="Write your message..." required></textarea></td>
                             </tr>
                             <tr>
-                                <td><button id="submit">Submit</button></td>
+                                <td><button type="submit" id="submit">Submit</button></td>
                             </tr>
                         </table>
                     </form>
