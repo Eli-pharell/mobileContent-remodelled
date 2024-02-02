@@ -686,9 +686,10 @@ footer{
     
     #client-feedback-header{
         position: relative;
+        padding: 0 0 0 1rem;
         margin-top: 15%;
         font-weight: normal;
-        text-indent: 20px;
+        text-indent: 0;
     }
     
     #client-feedback-header b,#ellipsis{
