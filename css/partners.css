@@ -550,17 +550,77 @@ footer{
     #main-footer-container>*{
         width:30%;
     }
+    .context{
+        font-size: 18px;
+    }
 }
 
 @media (max-width:992px){
     #main-footer-container>*{
         width:45%;
     }
+    .context{
+        font-size: 18px;
+        padding: .5rem;
+    }
 }
 
 @media (max-width:768px){
     #main-footer-container>*{
         width:clamp(55%,60%,65%)
+    }
+    body{
+        background-color: red;
+    }
+    .testimonials{
+        gap: 3rem 0;
+    }
+    
+    .testimonial{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .context{
+        font-size: 16px;
+        padding: 1rem .5rem 5rem .5rem;
+    }
+    .testimonial>*{
+        width: 100%;
+    }
+
+    .hidden-context{
+        display: unset;
+    }
+
+
+    .main-context,
+    .testimonial::after,
+    .testimonial::before,
+    .rectangle{
+        display: none;
+    }
+
+    .client-socials{
+        top: unset;
+        bottom: 1rem;
+        right: 1rem;        
+        flex-flow: row;
+        gap: 0 2rem;
+
+    }
+
+    .icon{
+        scale: 1.13;
+    }
+
+    .rating{
+        margin-left: -.5rem;
+        scale: 0.98;
+    }
+
+    .stars{
+        scale: 0.98;
     }
 
 }

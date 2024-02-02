@@ -6,7 +6,6 @@ const logo = document.getElementById("logo");
 const overlay = document.getElementById("overlay");
 const body = document.querySelector("body");
 
-
 console.log(navBtn)
 
 navBtn.onclick = ()=>{
@@ -35,3 +34,4 @@ overlay.onclick = ()=>{
     body.classList.remove("active");
 
 }
+

@@ -303,6 +303,7 @@ section{
     top: -5rem;
     left: -4rem;
     rotate: 170deg;
+    color:linear-gradient(to top left,var(--color5), var(--color1) );
 }
 
 .icon3{
