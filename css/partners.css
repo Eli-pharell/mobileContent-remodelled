@@ -649,7 +649,8 @@ footer{
     }
 
     #partner-header{
-        text-align: center;
+        text-align: left;
+        padding: 0 0 0 1rem;
         margin: 0 0 5rem 0;
     }
     
@@ -692,7 +693,7 @@ footer{
     
     #client-feedback-header b,#ellipsis{
         color: var(--color3);
-        font-size: 35px;
+        font-size: 30px;
     }
     
     .testimonial{
