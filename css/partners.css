@@ -702,6 +702,9 @@ footer{
         flex-flow: column;
     }
 
+    .context{
+        font-size: 14px;
+    }
     .testimonial>*{
         width: 100%;
     }
