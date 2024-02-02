@@ -177,7 +177,6 @@ section{
 div#partner-content{
     text-align: center;
     margin: 0 0 5rem 0;
-    background-color: black;
 }
 
 #partner-content h3{
@@ -196,7 +195,6 @@ h3 b{
 #image-container{
     width: 100%;
     height: 400px;
-    background-color: green;
 }
 
 #partner-image{
@@ -210,7 +208,6 @@ h3 b{
     margin-top: 15%;
     font-weight: normal;
     text-indent: 30px;
-    background-color: blue;
 }
 
 .client-feedback-session b,#ellipsis{
@@ -222,7 +219,6 @@ h3 b{
     width: 100%;
     padding: 4rem 0 10rem 0;
     margin: 1rem 0 0 0;
-    background-color: red;
 }
 
 .testimonial{
@@ -667,12 +663,6 @@ footer{
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
     }
-
-    .testimonial::after,
-    .testimonial::before,
-    .rectangle{
-        display: none;
-    }
     
     .testimonial{
         position: relative;
@@ -794,6 +784,12 @@ footer{
 
     #slider{
         height: 80px;
+    }
+
+    .testimonial::after,
+    .testimonial::before,
+    .rectangle{
+        display: none;
     }
     
     
