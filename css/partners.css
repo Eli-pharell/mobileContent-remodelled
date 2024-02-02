@@ -226,7 +226,6 @@ h3 b{
     align-items: center;
     gap: 10rem 0;
     padding: 4rem 0 10rem 0;
-    margin: 1rem 0 0 0;
 }
 
 .testimonial{
@@ -648,6 +647,23 @@ footer{
         width: calc(100% - var(--mobile-aside-width));
     }
 
+    #partner-slider{
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+
+    #slider-top{
+        width: 100%;
+        height: 200px;
+        display: flex;
+    }
+
+    .partners{
+        width: 100%;
+        object-fit: contain;
+    }
+
     #partner-header{
         text-align: left;
         padding: 0 0 0 1rem;
@@ -687,6 +703,7 @@ footer{
     #client-feedback-header{
         position: relative;
         padding: 0 0 0 1rem;
+        text-align: center;
         margin-top: 15%;
         font-weight: normal;
         text-indent: 0;
