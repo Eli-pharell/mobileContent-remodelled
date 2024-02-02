@@ -704,6 +704,7 @@ footer{
 
     .context{
         font-size: 14px;
+        padding: .5rem;
     }
     .testimonial>*{
         width: 100%;
