@@ -192,7 +192,7 @@ h3 b{
     color: var(--color3);
 }
 
-#mobile-back{
+#partner-slider{
     display: none;
 }
 
@@ -648,6 +648,7 @@ footer{
     }
 
     #partner-slider{
+        display: unset;
         width: 100%;
         display: flex;
         overflow: hidden;
@@ -705,6 +706,10 @@ footer{
     #client-feedback-header b,#ellipsis{
         color: var(--color3);
         font-size: 30px;
+    }
+
+    .testimonials{
+        gap: 3rem 0;
     }
     
     .testimonial{
