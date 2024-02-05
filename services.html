@@ -93,10 +93,15 @@
             </div>
         </div>
         
+        <!-- SERVICE REQUEST FORM DESKTOP VERSION -->
         <div id="request-form-container">
-            <form class="request-form" action="">
+            <form class="request-form form1" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="d5aab829-ce64-4e98-9edf-e096f5f4a1f0">
+                <input type="hidden" name="subject" value="Service Request Form">
+                <input type="hidden" name="from_name" value="Mcc Website">
+
                 <table class="request-table">
-                    
                     <th>SERVICE REQUEST FORM</th>
 
                     <tr class="rows">
@@ -112,11 +117,11 @@
                     <tr class="rows">
                         <td class="row-data">
                             <h3>First Name</h3>
-                            <input type="text" name="First Name" id="first-name" required>
+                            <input type="text" name="First Name" id="first-name"required>
                         </td>
                         <td class="row-data">
                             <h3>Last Name</h3>
-                            <input type="text" name="last Name" id="last-name" required>
+                            <input type="text" name="last Name" id="last-name"required>
                         </td>
                     </tr>
                     <tr class="rows">
@@ -132,7 +137,7 @@
                     <tr class="rows">
                         <td class="row-data">
                             <h3>Services</h3>
-                            <select name="Service Option" id="service-options" required>
+                            <select name="Service Option" id="service-options" >
                                 <option class="option" value="empty" id="empty"></option>
                                 <option class="option" value="myCloud">Cloud service</option>
                                 <option class="option" value="Web/app">Web/App solutions</option>
@@ -146,7 +151,7 @@
                     <tr class="rows">
                         <td class="row-data">
                             <h3>Request Description</h3>
-                            <textArea name="Request Description" id="request-description" required></textArea>
+                            <textArea name="Request Description" id="request-description" ></textArea>
                         </td>
                         <td><input type="submit" id="submit"></td>
                     </tr>
@@ -156,8 +161,13 @@
             </form>
         </div>
 
+
+        <!-- SERVICE REQUEST FORM MOBILE VERSION -->
         <div id="mobile-request-form-container">
-            <form class="request-form mobile-form" action="">
+            <form class="request-form mobile-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="from_name" value="Mcc Website">
+                <input type="hidden" name="subject" value="Service Request Form"> 
+                <input type="hidden" name="access_key" value="d5aab829-ce64-4e98-9edf-e096f5f4a1f0">
                 <table class="request-table mobile-table">
                     
                     <th>SERVICE REQUEST FORM</th>
@@ -224,6 +234,7 @@
                 </table>
                 <div class="square square1"></div>
                 <div class="square square2"></div>
+                <div class="h-captcha" data-captcha="true"></div>
             </form>
         </div>
 
