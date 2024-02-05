@@ -274,22 +274,23 @@ section{
 
 .request-form{
     position: relative;
-    background-color: var(--color1);
-    border-left: 2px solid var(--color3);
-    border-bottom: 2px solid var(--color3);
+    background-color: var(--color2);
     box-shadow: 8px 10px 30px -10px rgb(0, 0, 0,0.7);
     padding: 0rem 0 2rem 0;
+    overflow: hidden;
 }
 
 .request-table{
     border-collapse:separate;
     border-spacing: 50px 0;
+    color: var(--color1);
 }
 
 .request-table th{
    height: 5rem;
    font-size: 25px;
    text-indent: 2.5rem;
+   color: var(--color6);
 }
 
 
@@ -301,8 +302,8 @@ section{
 .row-data input,
 .row-data textarea,
 .row-data select{
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.15) 10%,rgb(225,225,225,0) 90%);
-    border-bottom: 2px solid rgb(125, 18, 41,0.5);
+    background:transparent;
+    border-bottom: 2px solid #F3D8C7;
     border-radius: 0 0 8px 0;
     text-indent: .6rem;
     width: 18rem;
@@ -310,6 +311,13 @@ section{
     margin: .6rem 0 0 0;
     font-size: 18px;
     transition: 250ms;
+    color: var(--color1);
+}
+
+.row-data option{
+    color: var(--color5);
+    background-color: var(--color1);
+    font-style: italic;
 }
 
 .row-data textarea{
@@ -325,11 +333,11 @@ section{
 
 #submit{
     cursor: pointer;
-    color: var(--color1);
+    color: var(--color5);
     font-size: 20px;
     padding: 10px 20px;
     background-image: url('/images/background/button.png');
-    background-color: var(--color2);
+    background-color: var(--color1);
     background-size: 300%;
     background-position-y:60%;
     background-position-x: 215%;
@@ -339,25 +347,32 @@ section{
 
 #submit:hover{
     background-position-x: 50%;
+    color: var(--color1);
 }
 
 .square{
     position: absolute;
+    scale: 1.1;
+
 }
 
 .square1{
-    bottom: 0;
+    bottom: -1rem;
     right: 0;
-    height:7rem;
-    width:7rem;
+    height:10rem;
+    width:15rem;
     background-color: var(--color3);
+    border-radius: 100% 0% 100% 0% / 95% 100% 0% 5%;
+    z-index: 2;
 }
 .square2{
-    right: 10.9%;
-    bottom: 13.8%;
-    width: 2rem;
-    height: 2rem;
+    bottom: 0rem;
+    right: 0;
+    height:10rem;
+    width:15rem;
     background-color: var(--color1);
+    border-radius: 100% 0% 100% 0% / 95% 100% 0% 5%;
+    z-index: 1;
 }
 
 #mobile-request-form-container{
@@ -709,12 +724,9 @@ section{
 
     .row-data textarea{
         width: 16rem;
+        height: 7rem;
     }
 
-    .square2{
-        bottom:5.1rem;
-        right: 5.1rem;
-    }
     
     footer{
         padding: 1rem  0 0 5px;
