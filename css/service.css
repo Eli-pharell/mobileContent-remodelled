@@ -266,13 +266,18 @@ section{
  }
 
 #request-form-container{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 #request-form{
+    position: relative;
     background-color: var(--color1);
+    border-left: 2px solid var(--color3);
+    border-bottom: 2px solid var(--color3);
+    box-shadow: 8px 10px 30px -10px rgb(0, 0, 0,0.7);
     padding: 0rem 0 2rem 0;
 }
 
@@ -334,6 +339,25 @@ section{
 
 #submit:hover{
     background-position-x: 50%;
+}
+
+.square{
+    position: absolute;
+}
+
+.square1{
+    bottom: 0;
+    right: 0;
+    height:7rem;
+    width:7rem;
+    background-color: var(--color3);
+}
+.square2{
+    right: 10.9%;
+    bottom: 13.8%;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color1);
 }
 
  footer{

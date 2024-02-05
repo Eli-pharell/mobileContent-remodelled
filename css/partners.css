@@ -569,9 +569,6 @@ footer{
     #main-footer-container>*{
         width:clamp(55%,60%,65%)
     }
-    body{
-        background-color: red;
-    }
     .testimonials{
         gap: 3rem 0;
     }
