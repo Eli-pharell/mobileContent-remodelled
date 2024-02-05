@@ -672,6 +672,7 @@ section{
     section{
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
+        background-size: 150%;
     }
 
 
@@ -701,7 +702,7 @@ section{
     .mobile-form, .mobile-table{
         width: 96%;
         overflow: hidden;
-        padding-bottom: 3rem;
+        padding-bottom: 6rem;
     }
 
     .mobile-form{
@@ -725,6 +726,7 @@ section{
     .row-data textarea{
         width: 16rem;
         height: 7rem;
+        margin-bottom: 1rem;
     }
 
     
