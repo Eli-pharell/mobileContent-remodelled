@@ -148,7 +148,6 @@ nav>*{
     width: 145px;
     color: var(--color5);
     transition: all 250ms;
-    background-color: red;
 }
 
 .tab:hover, .actives{
