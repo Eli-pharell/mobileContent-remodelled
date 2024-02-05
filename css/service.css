@@ -684,13 +684,22 @@ section{
     }
     
     .mobile-form, .mobile-table{
-        width: 90%;
+        width: 96%;
+        overflow: hidden;
         padding-bottom: 3rem;
     }
 
+    .mobile-form{
+        border-left-color: var(--color2);
+        border-bottom-color: var(--color2);
+    }
+    .mobile-table{
+        margin-left: -1rem;
+    }
+
     .request-table th{
-        font-size: 22px;
-        text-indent: -2rem;
+        font-size: 20px;
+        text-indent: -4rem;
     }
 
     .row-data input,
