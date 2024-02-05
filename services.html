@@ -94,8 +94,8 @@
         </div>
         
         <div id="request-form-container">
-            <form id="request-form" action="">
-                <table id="request-table">
+            <form class="request-form" action="">
+                <table class="request-table">
                     
                     <th>SERVICE REQUEST FORM</th>
 
@@ -150,6 +150,77 @@
                         </td>
                         <td><input type="submit" id="submit"></td>
                     </tr>
+                </table>
+                <div class="square square1"></div>
+                <div class="square square2"></div>
+            </form>
+        </div>
+
+        <div id="mobile-request-form-container">
+            <form class="request-form mobile-form" action="">
+                <table class="request-table mobile-table">
+                    
+                    <th>SERVICE REQUEST FORM</th>
+
+                    <tr class="rows">
+                        <td class="row-data">
+                            <h3>Company Name</h3>
+                            <input type="text" name="Company Name" id="company-name">
+                        </td>
+                    </tr>
+                    <tr class="rows">
+                        <td class="row-data">
+                            <h3>Office</h3>
+                            <input type="text" name="Office" id="office">
+                        </td>
+                    </tr>
+                    <tr class="rows">
+                        <td class="row-data">
+                            <h3>First Name</h3>
+                            <input type="text" name="First Name" id="first-name" required>
+                        </td>
+                    </tr>
+                    <tr class="rows">
+                        <td class="row-data">
+                            <h3>Last Name</h3>
+                            <input type="text" name="last Name" id="last-name" required>
+                        </td>
+                    </tr>
+                    <tr class="rows">
+                        <td class="row-data">
+                            <h3>Email Address</h3>
+                            <input type="email" name="Email" id="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row-data">
+                            <h3>Phone Number</h3>
+                            <input type="tel" name="Phone Number" id="phone-number" required>
+                        </td>
+                    </tr>
+                    <tr class="rows">
+                        <td class="row-data">
+                            <h3>Services</h3>
+                            <select name="Service Option" id="service-options" required>
+                                <option class="option" value="empty" id="empty"></option>
+                                <option class="option" value="myCloud">Cloud service</option>
+                                <option class="option" value="Web/app">Web/App solutions</option>
+                                <option class="option" value="payment">Payment Solutions</option>
+                                <option class="option" value="voting">Voting and Ticketing</option>
+                                <option class="option" value="ussd">USSD API</option>
+                                <option class="option" value="RBT">RingBack Tone</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="rows">
+                        <td class="row-data">
+                            <h3>Request Description</h3>
+                            <textArea name="Request Description" id="request-description" required></textArea>
+                        </td>
+                    </tr>
+                    <tr class="rows">
+                        <td><input type="submit" id="submit"></td>
+                    </trc>
                 </table>
                 <div class="square square1"></div>
                 <div class="square square2"></div>

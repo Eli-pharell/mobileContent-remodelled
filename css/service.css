@@ -143,7 +143,7 @@ nav>*{
 .tab{
     font-size: 21px;
     font-weight: 600;
-    width: 135px;
+    width: 145px;
     color: var(--color5);
     transition: all 250ms;
 }
@@ -272,7 +272,7 @@ section{
     justify-content: center;
 }
 
-#request-form{
+.request-form{
     position: relative;
     background-color: var(--color1);
     border-left: 2px solid var(--color3);
@@ -281,12 +281,12 @@ section{
     padding: 0rem 0 2rem 0;
 }
 
-#request-table{
+.request-table{
     border-collapse:separate;
     border-spacing: 50px 0;
 }
 
-#request-table th{
+.request-table th{
    height: 5rem;
    font-size: 25px;
    text-indent: 2.5rem;
@@ -358,6 +358,13 @@ section{
     width: 2rem;
     height: 2rem;
     background-color: var(--color1);
+}
+
+#mobile-request-form-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    display: none;
 }
 
  footer{
@@ -652,14 +659,53 @@ section{
         width: calc(100% - var(--mobile-aside-width));
     }
 
+
     #service-header{
         font-size:30px;
+    }
+
+    #services-tabs{
+        gap: 3rem 0;
     }
     
     .service-tab{
         width: 96%;
+        height: 30rem;
+    }
+
+    #request-form-container{
+        display: none;
+    }
+
+    #mobile-request-form-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
     
+    .mobile-form, .mobile-table{
+        width: 90%;
+        padding-bottom: 3rem;
+    }
+
+    .request-table th{
+        font-size: 22px;
+        text-indent: -2rem;
+    }
+
+    .row-data input,
+    .row-data select{
+        width: 14rem;
+    }
+
+    .row-data textarea{
+        width: 16rem;
+    }
+
+    .square2{
+        bottom:5.1rem;
+        right: 5.1rem;
+    }
     
     footer{
         padding: 1rem  0 0 5px;

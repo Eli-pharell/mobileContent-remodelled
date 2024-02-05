@@ -144,7 +144,7 @@ nav>*{
 .tab{
     font-size: 21px;
     font-weight: 600;
-    width: 135px;
+    width: 145px;
     color: var(--color5);
     transition: all 250ms;
 }
