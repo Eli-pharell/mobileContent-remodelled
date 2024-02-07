@@ -45,12 +45,98 @@ body.active{
     width:100%;
     height:100vh;
     left: -100%;
-    z-index: 3;
+    z-index: 4;
     transition: 450ms ease-in-out;
 }
 
 #overlay.active{
     left: 0;
+}
+
+#overlay2{
+    position: fixed;
+    background-color: rgb(0, 0, 0,0.7);
+    width:100%;
+    height:100vh;
+    left: 0;
+    display: none;
+    z-index: 3;
+    transition: 450ms ease-in-out;
+}
+
+#overlay2.active{
+    display: block;
+}
+
+.policies{
+    position: fixed;
+    background-color: white;
+    padding: 2rem 2rem;
+    width: 50%;
+    height: 30rem;
+    top: 10%;
+    right: 23%;
+    z-index: 5;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    scale: 0;
+    overflow-y: scroll;
+    transition: 250ms ease-in-out;
+}
+
+.policies h1{
+    font-family: 'Times New Roman';
+    margin: 0 0 1rem 0;
+}
+
+.policies::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.policies::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+.policies::-webkit-scrollbar-thumb{
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+#privacy-policy.active{
+    scale: 1;
+}
+
+#terms-and-conditions.active{
+    scale: 1;
+}
+
+#close-btn{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+}
+
+#close-btn.active{
+    display: block;
+}
+
+.close-lines{
+    width: 2rem;
+    height: 2px;
+    background-color: var(--color3);
+}
+
+.cline1{
+    rotate: 45deg;
+    transform: translate(1.3px, 0px);
+}
+
+.cline2{
+    rotate: -45deg;
+    transform: translate(1.3px, 0px);
 }
 
 aside{
@@ -324,6 +410,7 @@ table input{
 
 table textarea{
     height: 5rem;
+    width: 75%;
     font-size: 20px;
     text-indent: 10px;
     border-bottom: 2px solid rgb(0, 0, 0,0.3);
@@ -414,6 +501,7 @@ footer{
 .col3 a,
 .col2 a{
     color: var(--color1);
+    position: relative;
 }
 
 .col2 li:not(:last-child){
@@ -440,6 +528,10 @@ footer{
     width: 23%;
     height: 100%;
 }
+
+
+
+
 
 #newsletter-text{
     margin-bottom: 2rem;
@@ -555,13 +647,260 @@ footer{
     #main-footer-container>*{
         width:45%;
     }
+    
+    #contact-container{
+        width: 100%;
+        height: 800px;
+        padding: 5rem 0 0 0;
+    
+    }
+    
+    #main-contact-header{
+        font-size: 25px;
+        color: var(--color5);
+    }
+    
+    
+    
+    #centered-container{
+        width: 90%;
+        height: 100%;
+        scale: 0.98;
+    }
+    
+    #contact-header{
+        font-size: 18px;
+    }
+    
+    #contact-header p{
+        font-weight: normal;
+        margin: .4rem 0 0 0;
+    }
+    
+    
+    .sub-container1{
+        row-gap: 2rem;
+        box-shadow: 10px 0 10px -10px rgb(0, 0, 0,0.7);
+        font-size: 16px;
+    }
+    
+    
+    #shape1{
+        right: -5%;
+        bottom: -12%;
+        padding: 100px;
+    
+    }
+    
+    #shape2{
+        right: -5%;
+        bottom: -12%;
+        padding: 80px;
+    }
+    #shape3{
+        right: -5%;
+        bottom: -8%;
+        padding: 40px;
+    }
+
+    .shape{
+        transform: translateX(10px);
+        scale: clamp(.8,0.9,.95);
+    }
+    
+    
+    .sub-container2{
+        margin-left: -2rem;
+        padding:  4rem 0 0 5rem;
+        border-radius:  0 20px 20px 0;
+        color: var(--color5);
+        background-color: var(--color1);
+        border-bottom: 3px solid var(--color3);
+    }
+    
+    #form-logo{
+        position: absolute;
+        height: 70px;
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    
+    
+    
+    table tr>td{
+        display:block;
+    }
+    
+    table{
+        width: 90%;
+    }
+    
+    table tr,
+    table input,
+    table textarea{
+        width: 70%;
+    }
+    
+    table tr{
+        height: 5rem;
+    }
+    
+    
+    table h3{
+        font-size: 20px;
+    }
+
+    table input{
+        height: 2.5rem;
+        font-size: 18px;
+        text-indent: 10px;
+        border-bottom: 2px solid rgb(0, 0, 0,0.3);
+        background-color: transparent;
+        transition: 250ms;
+    
+    }
+    
+    table textarea{
+        height: 5.5rem;
+        width: 80%;
+        font-size: 20px;
+        text-indent: 10px;
+        border-bottom: 2px solid rgb(0, 0, 0,0.3);
+        background-color: transparent;
+        transition: 250ms;
+    }
+    
+    #message-row{
+        height: 9rem;
+    }
+    
+    
+    #submit{
+        cursor: pointer;
+        color: var(--color1);
+        font-size: 18px;
+        padding: 8px 18px;
+    }
+    
+    
+    
+    #form-socials{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        column-gap: 1.4rem;
+        padding:  0 1.8rem .8rem 0;
+    }
+    
+    #form-socials a{
+     font-size: 20px;
+     color: var(--color5);
+    }
+    
+
+
+
+}
+
+@media (max-width:900px){
+    .shape{
+        transform: translateX(10px);
+        scale: clamp(.85,0.5,.95);
+    }
+}
+
+@media (max-width:850px) {
+    #contact-container{
+        height: fit-content;
+    }
+
+    #centered-container{
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-columns: 100%;
+        grid-auto-rows: 55% 45%;
+        width: 96%;
+        background-color: white;
+        text-align: left;
+        height: 94rem;
+        border-radius: 20px;
+        box-shadow: 10px 15px 40px -15px rgba(2, 2, 81, 0.4);
+    }
+
+    #contact-header{
+        font-size: 17px;
+    }
+    .sub-container1{
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        row-gap: 3rem;
+        border-radius: 20px;
+        color: var(--color1);
+        padding:  1.5rem 0 0 2rem;
+        background-color: var(--color2);
+        z-index: 2;
+        box-shadow: 0 10px 10px -10px rgb(0, 0, 0,0.7);
+        font-size: 18px;
+        overflow: hidden;
+    }
+    .shape{
+        transform: translateY(-10px);
+        scale: clamp(1,1.3,1.6);
+    }
+
+    .sub-container2{
+        position: relative;
+        margin:-1rem 0 0 0;
+        padding:  8rem 0 0 2rem;
+        border-radius:  0 0 20px 20px;
+        color: var(--color5);
+        background-color: var(--color1);
+        border-bottom: 3px solid var(--color3);
+    }
+
+    #form-logo{
+        top: 2.2rem;
+    }
+
+    table tr,
+    table input,
+    table textarea{
+    width: 95%;
+}
+
+    table h3{
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    table tr{
+        height: 6rem;
+    }
+
+    table textarea{
+        height: 7rem;
+    }
+    
+    #form-socials{
+        margin-top: -1rem;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        column-gap: 1.4rem;
+        padding:  0 2rem 1rem 0;
+    }
+
+    #submit{ 
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width:768px){
     #main-footer-container>*{
         width:clamp(55%,60%,65%)
     }
-
 }
 
 @media (max-width:576px){

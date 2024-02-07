@@ -35,6 +35,42 @@ overlay.onclick = ()=>{
 
 }
 
+
+const privacy = document.getElementById('privacy');
+const privacyPolicy = document.getElementById('privacy-policy');
+const closebtn = document.getElementById('close-btn');
+const overlay2 = document.getElementById('overlay2');
+const terms = document.getElementById('terms');
+const termsConds = document.getElementById('terms-and-conditions')
+
+
+function backpop(){
+    closebtn.classList.add('active');
+    overlay2.classList.add('active');
+    body.classList.add("active");
+}
+
+terms.onclick = () =>
+{
+    termsConds.classList.add('active');
+    backpop();
+}
+
+privacy.onclick = ()=>
+{
+    privacyPolicy.classList.add('active');
+    backpop();
+}
+
+closebtn.onclick = ()=>
+{
+    privacyPolicy.classList.remove('active');
+    termsConds.classList.remove('active');
+    closebtn.classList.remove('active');
+    overlay2.classList.remove('active');
+    body.classList.remove("active");
+}
+
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,

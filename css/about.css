@@ -53,6 +53,91 @@ body.active{
     left: 0;
 }
 
+#overlay2{
+    position: fixed;
+    background-color: rgb(0, 0, 0,0.7);
+    width:100%;
+    height:100vh;
+    left: 0;
+    display: none;
+    z-index: 3;
+    transition: 450ms ease-in-out;
+}
+
+#overlay2.active{
+    display: block;
+}
+
+.policies{
+    position: fixed;
+    background-color: white;
+    padding: 2rem 2rem;
+    width: 50%;
+    height: 30rem;
+    top: 10%;
+    right: 23%;
+    z-index: 5;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    scale: 0;
+    overflow-y: scroll;
+    transition: 250ms ease-in-out;
+}
+
+.policies h1{
+    font-family: 'Times New Roman';
+    margin: 0 0 1rem 0;
+}
+
+.policies::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.policies::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+.policies::-webkit-scrollbar-thumb{
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+#privacy-policy.active{
+    scale: 1;
+}
+
+#terms-and-conditions.active{
+    scale: 1;
+}
+
+#close-btn{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+}
+
+#close-btn.active{
+    display: block;
+}
+
+.close-lines{
+    width: 2rem;
+    height: 2px;
+    background-color: var(--color3);
+}
+
+.cline1{
+    rotate: 45deg;
+    transform: translate(1.3px, 0px);
+}
+
+.cline2{
+    rotate: -45deg;
+    transform: translate(1.3px, 0px);
+}
 aside{
     position:fixed;
     background-color: var(--color1);
