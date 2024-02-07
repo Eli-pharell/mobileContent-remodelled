@@ -940,6 +940,13 @@ footer{
 }
 
 @media (max-width:480px){
+
+    .policies{
+        right: 5%;
+        width: 80%;
+        height: 35rem;
+    }
+    
     aside{
         width: var(--mobile-aside-width);
     }
