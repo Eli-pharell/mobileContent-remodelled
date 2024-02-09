@@ -85,6 +85,8 @@ closebtn.onclick = ()=>
 let BusinessTime = new Date();
 let activeStatus = document.getElementById('active-status');
 
+
+
 if(BusinessTime.getHours() >= 8 && BusinessTime.getHours() < 17){
     activeStatus.innerHTML = "Open";
     activeStatus.style.color = "#04D9FF";
@@ -93,6 +95,19 @@ else{
     activeStatus.innerHTML = "Closed";
     activeStatus.style.color = "orangered";
 }
+
+if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.getDate() == 7) || 
+(BusinessTime.getMonth() ==2 && (BusinessTime.getDate()==6 || BusinessTime.getDate()==29)) ||
+(BusinessTime.getMonth() == 3 && BusinessTime.getDate() == 1) ||
+(BusinessTime.getMonth() == 4 && BusinessTime.getDate() == 1) ||
+(BusinessTime.getMonth() == 7 && BusinessTime.getDate() == 4) ||
+(BusinessTime.getMonth() == 8 && BusinessTime.getDate() == 21) ||
+(BusinessTime.getMonth() ==11 && (BusinessTime.getDate()==6 || BusinessTime.getDate()== 25|| BusinessTime.getDate()==26))
+){
+    activeStatus.innerHTML = "Closed";
+    activeStatus.style.color = "orangered";
+}
+
 
 
 
