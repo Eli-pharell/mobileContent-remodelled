@@ -302,6 +302,7 @@ section{
     background: var(--color4);
     border-radius: 10px;
     transition: 300ms;
+    color: var(--color5);
  }
  
  .service-tab p, i, h3{
@@ -357,6 +358,25 @@ section{
  
  .service-tab:hover{
     box-shadow: 0px 20px 50px -22px rgb(255, 69, 0,0.72);
+ }
+
+ #service-request-statement{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2.5rem 0;
+    font-size: 19px;
+    color: var(--color5);
+ }
+
+ #service-request-statement h1{
+    margin:  0 0 1rem 0;
+ }
+
+ #service-request-statement p{
+    width: 96%;
  }
 
 #request-form-container{
