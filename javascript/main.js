@@ -102,7 +102,8 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
 (BusinessTime.getMonth() == 4 && BusinessTime.getDate() == 1) ||
 (BusinessTime.getMonth() == 7 && BusinessTime.getDate() == 4) ||
 (BusinessTime.getMonth() == 8 && BusinessTime.getDate() == 21) ||
-(BusinessTime.getMonth() ==11 && (BusinessTime.getDate()==6 || BusinessTime.getDate()== 25|| BusinessTime.getDate()==26))
+(BusinessTime.getMonth() ==11 && (BusinessTime.getDate()==6 || BusinessTime.getDate()== 25|| BusinessTime.getDate()==26)) ||
+(BusinessTime.getDay() == 6 || BusinessTime.getDay() ==7)
 ){
     activeStatus.innerHTML = "Closed";
     activeStatus.style.color = "orangered";
