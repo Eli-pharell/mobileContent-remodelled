@@ -935,6 +935,11 @@ input:focus{
         margin: 0 0 0 1.5rem;
     }
 
+    .tab{
+        font-size: 20px;
+        width: 146px;
+    }
+
     #icon{
         display: none;
     }
@@ -982,6 +987,9 @@ input:focus{
         height: 32rem;
     }
 
+    .service-tab p{
+        margin: 0 0 1rem 0;
+    }
     #request-form-container{
         display: none;
     }

@@ -770,6 +770,11 @@ footer{
         margin: 0 0 0 1.5rem;
     }
 
+    .tab{
+        font-size: 20px;
+        width: 146px;
+    }
+
     #icon{
         display: none;
     }
