@@ -1012,6 +1012,7 @@ input:focus{
     }
     .mobile-table{
         margin-left: -1rem;
+        font-size: 1px !important;
     }
 
     .request-table th{
@@ -1019,13 +1020,17 @@ input:focus{
         text-indent: -4rem;
     }
 
+    .row-data{
+        font-size: 16px;
+    }
+
     .row-data input,
     .row-data select{
-        width: 14rem;
+        width: 17rem;
     }
 
     .row-data textarea{
-        width: 16rem;
+        width: 18rem;
         height: 7rem;
         margin-bottom: 1rem;
     }
