@@ -948,6 +948,10 @@ footer{
     }
     
 
+    #welcome-banner{
+        display: none;
+    }
+
     section{
         margin: 0 0 0 var(--mobile-aside-width);
         width: calc(100% - var(--mobile-aside-width));
