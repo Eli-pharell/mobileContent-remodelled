@@ -959,6 +959,7 @@ footer{
 
     #customer-support{
         gap: 3rem;
+        margin-top: 0;
     }
 
     .support-statements{
