@@ -1026,7 +1026,7 @@ input:focus{
 
     .row-data input,
     .row-data select{
-        width: 100%;
+        width: 80%;
     }
 
     .row-data textarea{
