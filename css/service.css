@@ -1002,7 +1002,7 @@ input:focus{
     
     .mobile-form, .mobile-table{
         width: 98%;
-        /* overflow: hidden; */
+        overflow: hidden;
         padding-bottom: 6rem;
     }
 
