@@ -182,7 +182,7 @@ nav>*{
 }
 
 .lines:hover .line{
-    background-color: #ff4500;
+    background-color: var(--color3);
 }
 
 .line:not(:last-child){

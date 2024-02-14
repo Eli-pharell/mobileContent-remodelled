@@ -183,7 +183,7 @@ nav>*{
 }
 
 .lines:hover .line{
-    background-color: #ff4500;
+    background-color: var(--color3);
 }
 
 .line:not(:last-child){
@@ -329,8 +329,8 @@ h3 b{
     padding: 50px;
     right: -1.5rem;
     bottom: -1.5rem;
-    border-right: 2px solid orangered;
-    border-bottom: 2px solid orangered;
+    border-right: 2px solid var(--color3);
+    border-bottom: 2px solid var(--color3);
 }
 
 .testimonial::before{
@@ -339,8 +339,8 @@ h3 b{
     padding: 50px;
     top: -1rem;
     left: -1rem;
-    border-left: 2px solid orangered;
-    border-top: 2px solid orangered;
+    border-left: 2px solid var(--color3);
+    border-top: 2px solid var(--color3);
 }
 
 .rectangle{
@@ -349,7 +349,7 @@ h3 b{
     height: 2%;
     right: -0.8rem;
     bottom: -0.9rem;
-    border: 2px solid orangered;
+    border: 2px solid var(--color3);
 }
 
 
@@ -362,7 +362,7 @@ h3 b{
 }
 
 .client-name{
-    color: orangered;
+    color: var(--color3);
     text-decoration: underline;
     letter-spacing: 8px;
     word-spacing: 4px;
@@ -391,11 +391,11 @@ h3 b{
 }
 
 .icon:hover{
-    color: orangered;
+    color: var(--color3);
 }
 
 .icon:focus{
-    color: orangered;
+    color: var(--color3);
 }
 
 .rating{
@@ -404,7 +404,7 @@ h3 b{
     margin-top: 3rem;
 }
 .stars{
-    background-color: orangered;
+    background-color: var(--color3);
     width: 1%;
     height: 1%;
     padding: 18px;
