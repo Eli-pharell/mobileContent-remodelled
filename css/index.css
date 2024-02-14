@@ -924,6 +924,10 @@ footer{
 }
 
 @media (max-width:480px){
+    #welcome-banner{
+        background-image: url('/images/background/MainMobileBanner.png');
+        margin-bottom:10rem;
+    }
 
     .policies{
         right: 5%;
@@ -979,9 +983,6 @@ footer{
     }
     
 
-    /* #welcome-banner{
-        display: none;
-    } */
 
     section{
         margin: 0 0 0 var(--mobile-aside-width);
