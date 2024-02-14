@@ -1,7 +1,7 @@
 :root{
     --color1:#F3D8C7;
     --color2:#7d1128;
-    --color3:#ff4500;
+    --color3:#f15a24;
     --color4:#ffffff;
     --color5:#01013a;
     --color6:#ffc5a1;
@@ -270,7 +270,7 @@ section{
 
 #welcome-banner{
     position: relative;
-    background-image: url('/images/background/mcc_banner_Artboard\ 1\ copy\ 9\ [Recovered].png');
+    background-image: url('/images/background/mccBannerToned.png');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
