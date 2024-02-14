@@ -810,12 +810,10 @@ footer{
         --large-text:26px;
     }
         #text{
-        position: absolute;
         width: 90%;
         height: 42%;
         top: 15%;
         left: 10%;
-        padding: 0 3rem 0 .5rem;
     }
     #welcome-banner{
         background-image: url('/images/background/mobileBanner.png');
@@ -860,6 +858,7 @@ footer{
         background-image: url('/images/background/mobileBanner.png');
         height:clamp(300px,350px,400px);
     }
+    
     #main-footer-container>*{
         width:90%;
     }
