@@ -19,3 +19,13 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  var counter = 1;
+  setInterval(function(){
+      document.getElementById('text').src = "images/icons/Text"+counter+".png";
+      counter++
+      if(counter>3){
+          counter=1;
+      }
+  },2000)
