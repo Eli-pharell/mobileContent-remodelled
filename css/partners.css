@@ -823,6 +823,7 @@ footer{
 
     .partners{
         width: 100%;
+        height: 140px;
         object-fit: contain;
     }
 
