@@ -270,7 +270,6 @@ section{
 
 #welcome-banner{
     position: relative;
-    background-color: black;
     background-image: url('/images/background/mcc_banner_Artboard\ 1\ copy\ 9\ [Recovered].png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -290,6 +289,7 @@ section{
 }
 
 #floating-asset{
+    display:none;
     position: absolute;
     bottom: -8rem;
     right: 0;
@@ -693,6 +693,10 @@ footer{
 
 
 @media (max-width:1200px){
+    #welcome-banner{
+        height: clamp(350px,400px, 450px);
+    }
+
     #main-footer-container>*{
         width:30%;
     }
@@ -754,6 +758,10 @@ footer{
         --large-text:28px;
     }
 
+    #welcome-banner{
+        height:clamp(250px,300px,350px);
+    }
+
     #main-footer-container>*{
         width:45%;
     }
@@ -782,7 +790,6 @@ footer{
         margin-top: 1rem;
     }
     
-    
     #trendin-images{
         width: 100% !important;
         height: 100% !important;
@@ -799,10 +806,23 @@ footer{
 }
 
 @media (max-width:768px){
-
     :root{
         --large-text:26px;
     }
+        #text{
+        position: absolute;
+        width: 90%;
+        height: 42%;
+        top: 15%;
+        left: 10%;
+        padding: 0 3rem 0 .5rem;
+    }
+    #welcome-banner{
+        background-image: url('/images/background/mobileBanner.png');
+        height:clamp(400px,450px,450px);
+    }
+
+
 
     #main-footer-container>*{
         width:clamp(55%,60%,65%)
@@ -828,6 +848,18 @@ footer{
 }
 
 @media (max-width:576px){
+    #text{
+        position: absolute;
+        width: 90%;
+        height: 45%;
+        top: 12%;
+        left: 10%;
+        padding: 0 3rem 0 .5rem;
+    }
+    #welcome-banner{
+        background-image: url('/images/background/mobileBanner.png');
+        height:clamp(300px,350px,400px);
+    }
     #main-footer-container>*{
         width:90%;
     }
@@ -948,9 +980,9 @@ footer{
     }
     
 
-    #welcome-banner{
+    /* #welcome-banner{
         display: none;
-    }
+    } */
 
     section{
         margin: 0 0 0 var(--mobile-aside-width);
