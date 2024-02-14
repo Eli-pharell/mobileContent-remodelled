@@ -966,6 +966,11 @@ input:focus{
         margin-bottom:10rem;
     }
 
+    #text{
+        width: 98%;
+        left: 6%;
+    }
+
     .policies{
         right: 5%;
         width: 80%;
