@@ -3,6 +3,10 @@ const table = document.querySelector('.request-table');
 var inputs = document.querySelectorAll('input');
 console.log(form);
 
+setTimeout(() => {
+  document.getElementById('welcome-text').src = "";
+}, 3000);
+
 var counter = 2;
 
 function loopDelay(ms){
@@ -21,7 +25,6 @@ async function reset(){
 }
 
 setInterval(() => {
-  document.getElementById('welcome-text').src = "";
   document.getElementById('welcome-text').src = "images/icons/welcome"+counter+".png";
   counter++
 
