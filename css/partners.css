@@ -71,6 +71,7 @@ body.active{
 
 .policies{
     position: fixed;
+    visibility: hidden;
     background-color: white;
     padding: 2rem 2rem;
     width: 50%;
@@ -103,11 +104,9 @@ body.active{
     border-radius: 10px;
 }
 
-#privacy-policy.active{
-    scale: 1;
-}
-
+#privacy-policy.active,
 #terms-and-conditions.active{
+    visibility: visible;
     scale: 1;
 }
 

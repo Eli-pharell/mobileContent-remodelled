@@ -21,11 +21,24 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-  var counter = 1;
-  setInterval(function(){
-      document.getElementById('text').src = "images/icons/Text"+counter+".png";
-      counter++
+  var counter = 2;
+
+  function loopDelay(ms){
+    
+    return new Promise( 
+        resolve =>{
+            setTimeout(()=>{resolve('')},ms);
+        })
+
+}
+
+  setInterval(async () => {
+    document.getElementById('welcome-text').src = "images/icons/welcome"+counter+".png";
+    counter++
+
       if(counter>3){
-          counter=1;
+        await loopDelay(3800);
+        counter = 1
       }
-  },2000)
+
+  }, 3990);

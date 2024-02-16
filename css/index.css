@@ -71,6 +71,7 @@ body.active{
 
 .policies{
     position: fixed;
+    visibility: hidden;
     background-color: white;
     padding: 2rem 2rem;
     width: 50%;
@@ -103,11 +104,9 @@ body.active{
     border-radius: 10px;
 }
 
-#privacy-policy.active{
-    scale: 1;
-}
-
+#privacy-policy.active,
 #terms-and-conditions.active{
+    visibility: visible;
     scale: 1;
 }
 
@@ -260,24 +259,25 @@ section{
     padding: 0rem 0 5rem 0;
 }
 
-#text{
-    position: absolute;
-    width: 53%;
-    height: 55%;
-    top: 30%;
-    padding: 0 3rem 0 .5rem;
+#welcome-text-container{
+    position: relative;
+    width: 50%;
+    height: 100%;
 }
 
-#welcome-banner{
-    position: relative;
-    background-color: rgb(0, 0, 0,0.4);
-    background-image: url('/images/background/mccBanner.png');
-    background-blend-mode: darken;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 487px;
-    transition: 800ms;
+#mobile-content{
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    width: 95%;
+}
+
+#welcome-text{
+    position: absolute;
+    bottom: 25%;
+    right: 4%;
+    animation: fade 2s infinite alternate;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes float{
@@ -291,17 +291,32 @@ section{
     }
 }
 
-#floating-asset{
-    display:none;
-    position: absolute;
-    bottom: -8rem;
-    right: 0;
-    animation: float;
-    animation-duration: 1.6s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
+
+
+
+#welcome-banner{
+    position: relative;
+    margin: 0 0 10rem 0;
+    background-color: rgb(0, 0, 0,0.4);
+    background-image: url('/images/background/mccBanner.png');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: clamp(420px,487px,490px);
+    transition: 550ms;
+}
+
+
+
 #customer-support{
     position: relative;
     width: 98%;
@@ -697,7 +712,11 @@ footer{
 
 @media (max-width:1200px){
     #welcome-banner{
-        height: clamp(350px,400px, 450px);
+        height: clamp(400px,420px,450px);
+    }
+
+    #welcome-text{
+        height: 9%;
     }
 
     #main-footer-container>*{
@@ -765,6 +784,7 @@ footer{
         height:clamp(250px,300px,350px);
     }
 
+
     #main-footer-container>*{
         width:45%;
     }
@@ -812,15 +832,28 @@ footer{
     :root{
         --large-text:26px;
     }
-        #text{
-        width: 90%;
-        height: 42%;
-        top: 15%;
-        left: 10%;
-    }
+
     #welcome-banner{
         background-image: url('/images/background/mobileBanner.png');
-        height:clamp(400px,450px,450px);
+        height:clamp(480px,550px,580px);
+    }
+
+    #welcome-text-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    #mobile-content{
+        position: absolute;
+        top: 35%;
+        left: 3%;
+        width: 95%;
+    }
+    
+    #welcome-text{
+        height:8% ;
+        bottom: 30%;
+        right: 4%;
     }
 
 
@@ -849,17 +882,9 @@ footer{
 }
 
 @media (max-width:576px){
-    #text{
-        position: absolute;
-        width: 90%;
-        height: 45%;
-        top: 12%;
-        left: 10%;
-        padding: 0 3rem 0 .5rem;
-    }
     #welcome-banner{
         background-image: url('/images/background/mobileBanner.png');
-        height:clamp(300px,350px,400px);
+        height:clamp(350px,400px,450px);
     }
     
     #main-footer-container>*{
@@ -932,10 +957,6 @@ footer{
         margin-bottom:10rem;
     }
 
-    #text{
-        width: 98%;
-        left: 6%;
-    }
 
     .policies{
         right: 5%;
