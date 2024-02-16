@@ -3,7 +3,7 @@ const table = document.querySelector('.request-table');
 var inputs = document.querySelectorAll('input');
 console.log(form);
 
-var counter = 2;
+var counter = 1;
 
 function loopDelay(ms){
   
@@ -14,7 +14,7 @@ function loopDelay(ms){
 }
 
 async function reset(){
- await loopDelay(2600);
+ await loopDelay(2800);
  if(counter>3){
   counter = 1;
  }
@@ -25,7 +25,7 @@ setInterval(() => {
   counter++
 
   reset();
-}, 2800);
+}, 3000);
 
 
 
