@@ -37,8 +37,8 @@ var swiper = new Swiper(".mySwiper", {
     counter++
 
       if(counter>3){
-        await loopDelay(3890);
+        await loopDelay(3850);
         counter = 1
       }
 
-  }, 3995);
+  }, 3990);
