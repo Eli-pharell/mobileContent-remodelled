@@ -43,4 +43,4 @@ async function reset(){
     counter++
 
     reset();
-  },3000);
+  },2970);

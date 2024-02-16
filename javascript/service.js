@@ -25,7 +25,7 @@ setInterval(() => {
   counter++
 
   reset();
-}, 3000);
+}, 2970);
 
 
 
