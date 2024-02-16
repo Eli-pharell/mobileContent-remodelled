@@ -21,6 +21,7 @@ async function reset(){
 }
 
 setInterval(() => {
+  document.getElementById('welcome-text').src = "";
   document.getElementById('welcome-text').src = "images/icons/welcome"+counter+".png";
   counter++
 
