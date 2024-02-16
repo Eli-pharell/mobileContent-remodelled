@@ -116,6 +116,7 @@ body.active{
     right: 5%;
     cursor: pointer;
     z-index: 3;
+    padding: 1rem 0;
     display: none;
 }
 
