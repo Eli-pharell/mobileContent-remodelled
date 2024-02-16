@@ -46,4 +46,4 @@ async function reset(){
     
 
     reset();
-  },2930);
+  },3000);
