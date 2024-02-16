@@ -4,7 +4,7 @@ var inputs = document.querySelectorAll('input');
 console.log(form);
 
 
-var counter = 2;
+var counter = 1;
 
 function loopDelay(ms){
   

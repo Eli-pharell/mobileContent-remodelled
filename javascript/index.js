@@ -22,7 +22,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-  var counter = 2;
+  var counter = 1;
 
   function loopDelay(ms){
     
