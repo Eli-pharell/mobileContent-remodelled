@@ -26,11 +26,8 @@ setInterval(() => {
   counter++
 
   reset();
-}, 2980);
+}, 2900);
 
 
 
-// form.addEventListener('submit',(e)=>{
-//     e.reset();
-// })
 
