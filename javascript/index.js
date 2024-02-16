@@ -33,7 +33,7 @@ var swiper = new Swiper(".mySwiper", {
 }
 
 async function reset(){
-   await loopDelay(2960);
+   await loopDelay(2970);
    if(counter>3){
     counter = 1;
    }
@@ -46,4 +46,4 @@ async function reset(){
     
 
     reset();
-  },2960);
+  },2970);
