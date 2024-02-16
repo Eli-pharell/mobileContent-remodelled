@@ -29,16 +29,18 @@ var swiper = new Swiper(".mySwiper", {
         resolve =>{
             setTimeout(()=>{resolve('')},ms);
         })
-
 }
 
-  setInterval(async () => {
+async function reset(){
+   await loopDelay(2800);
+   if(counter>3){
+    counter = 1;
+   }
+}
+
+  setInterval(() => {
     document.getElementById('welcome-text').src = "images/icons/welcome"+counter+".png";
     counter++
 
-      if(counter>3){
-        await loopDelay(3800);
-        counter = 1
-      }
-
-  }, 3990);
+    reset();
+  }, 3000);

@@ -3,7 +3,7 @@ const table = document.querySelector('.request-table');
 var inputs = document.querySelectorAll('input');
 console.log(form);
 
-var counter = 2;
+var counter = 1;
 
 function loopDelay(ms){
   
@@ -11,19 +11,22 @@ function loopDelay(ms){
       resolve =>{
           setTimeout(()=>{resolve('')},ms);
       })
-
 }
 
-setInterval(async () => {
+async function reset(){
+ await loopDelay(2800);
+ if(counter>3){
+  counter = 1;
+ }
+}
+
+setInterval(() => {
   document.getElementById('welcome-text').src = "images/icons/welcome"+counter+".png";
   counter++
 
-    if(counter>3){
-      await loopDelay(3700);
-      counter = 1
-    }
+  reset();
+}, 3000);
 
-}, 3990);
 
 
 // form.addEventListener('submit',(e)=>{

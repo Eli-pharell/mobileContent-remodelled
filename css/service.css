@@ -285,9 +285,8 @@ section{
     position: absolute;
     bottom: 25%;
     right: 4%;
-    animation: fade 2s infinite alternate;
-    animation-timing-function: ease-in-out;
-
+    opacity: 0;
+    animation: fade 3s infinite forwards;
 }
 
 @keyframes fade{
