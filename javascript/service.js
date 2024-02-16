@@ -15,7 +15,7 @@ function loopDelay(ms){
 }
 
 async function reset(){
- await loopDelay(2900);
+ await loopDelay(2975);
  if(counter>3){
   counter = 1;
  }
