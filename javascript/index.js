@@ -20,9 +20,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-  setTimeout(() => {
-    document.getElementById('welcome-text').src = "";
-  }, 3000);
 
 
   var counter = 2;

@@ -3,9 +3,6 @@ const table = document.querySelector('.request-table');
 var inputs = document.querySelectorAll('input');
 console.log(form);
 
-setTimeout(() => {
-  document.getElementById('welcome-text').src = "";
-}, 3000);
 
 var counter = 2;
 
