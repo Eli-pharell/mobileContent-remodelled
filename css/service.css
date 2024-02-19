@@ -286,20 +286,65 @@ section{
     position: absolute;
     bottom: 25%;
     right: 4%;
-    opacity: 0;
-    animation: fade 3s infinite forwards;
 }
 
-@keyframes fade{
+@keyframes fade1{
     0%{
         opacity: 0;
     }
-    50%{
+    16.5%{
         opacity: 1;
     }
-    100%{
+    33.3%{
         opacity: 0;
     }
+}
+@keyframes fade2{
+    33.3%{
+        opacity: 0;
+    }
+    46.95%{
+        opacity:1;
+    }
+    66.6%{
+        opacity: 0;
+    }
+}
+@keyframes fade3{
+    66.6%{
+        opacity: 0;
+    }
+    83.25%{
+        opacity: 1;
+    }
+    99.9%{
+        opacity: 0;
+    }
+}
+
+#welcome-text{
+    position: absolute;
+    bottom: 25%;
+    left: 65%;
+}
+
+#test{
+    position: relative;
+}
+
+.welcome-text-image{
+    position: absolute;
+    opacity: 0;
+}
+
+.welcome-text-image1{
+    animation: fade1 10s linear infinite;
+}
+.welcome-text-image2{
+    animation: fade2 10s linear infinite;
+}
+.welcome-text-image3{
+    animation: fade3 10s linear infinite;
 }
 
 #welcome-banner{
