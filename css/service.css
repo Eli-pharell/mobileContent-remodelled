@@ -1068,6 +1068,9 @@ input:focus{
         background-image: url('/images/background/MainMobileBanner.png');
         margin-bottom:10rem;
     }
+    #welcome-text{
+        left:58%;
+    }
 
     #text{
         width: 98%;
