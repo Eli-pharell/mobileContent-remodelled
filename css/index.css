@@ -749,7 +749,7 @@ footer{
     }
 
     #welcome-text{
-        height: 9%;
+        left: 60%;
     }
 
     #main-footer-container>*{
@@ -813,8 +813,19 @@ footer{
         --large-text:28px;
     }
 
+
     #welcome-banner{
         height:clamp(250px,300px,350px);
+    }
+
+    #welcome-text{
+        left: 60%;
+    }
+    #test{
+        height: 140%;
+    }
+    .welcome-text-image{
+        height: 100%;
     }
 
 
@@ -864,6 +875,15 @@ footer{
 @media (max-width:768px){
     :root{
         --large-text:26px;
+    }
+    #welcome-text{
+        left: 62%;
+    }
+    #test{
+        height: 110%;
+    }
+    .welcome-text-image{
+        height: 100%;
     }
 
     #welcome-banner{
