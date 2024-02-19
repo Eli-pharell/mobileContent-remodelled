@@ -1269,3 +1269,11 @@ input:focus{
       
     
 }
+
+
+@media (max-width:290px){
+    #welcome-text{
+        height: 8%;
+        left:55%;
+    }
+}
