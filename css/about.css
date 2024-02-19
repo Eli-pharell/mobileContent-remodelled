@@ -318,11 +318,13 @@ section{
    height: 80% !important;
    border-radius: 10px;
    border: 1px solid black;
+   overflow: hidden;
    scroll-snap-align: start !important;
 }
 
 .profile-text{
    position: absolute;
+   padding: 1px;
    top: -102%;
    width: 98%;
    height: 100%;
@@ -334,20 +336,44 @@ section{
    transition: ease 600ms;
 }
 
+.picture{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+ }
+
+ .picture.active{
+    filter: blur(4px);
+ }
+ 
+ .lock{
+     cursor: pointer;
+     font-size: 18px;
+     position: absolute;
+     color: var(--color3);
+     bottom: 1rem;
+     right: 1rem;
+     opacity: 0;
+     transition: all 600ms;
+ }
+
+.profile-text.active{
+    top:0;
+}
+
 .profile:hover .profile-text{
    top: 0;
 }
 
 .profile:hover .picture{
-   filter: blur(5px);
+   filter: blur(4px) !important;
+}
+.profile:hover .lock{
+    opacity: 1 !important;
 }
 
-.picture{
-   width: 100%;
-   height: 100%;
-   border-radius: 10px;
-   object-fit: cover;
-}
+
 
 .swiper-pagination{
    bottom: 0rem !important;
