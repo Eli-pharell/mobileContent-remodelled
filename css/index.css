@@ -289,8 +289,8 @@ section{
     position: absolute;
     bottom: 25%;
     right: 4%;
-    /* opacity: 1; */
-    /* animation: fade 3s infinite forwards; */
+    opacity: 1;
+    animation: fade 3s infinite forwards;
 }
 
 
