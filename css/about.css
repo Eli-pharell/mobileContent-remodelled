@@ -349,6 +349,7 @@ section{
  
  .lock{
      cursor: pointer;
+     padding: 8px;
      font-size: 18px;
      position: absolute;
      color: var(--color3);
