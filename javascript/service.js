@@ -4,7 +4,7 @@ var inputs = document.querySelectorAll('input');
 console.log(form);
 
 
-var counter = 1;
+var counter = 2;
 
 function loopDelay(ms){
   
@@ -15,18 +15,18 @@ function loopDelay(ms){
 }
 
 async function reset(){
- await loopDelay(2800);
+ await loopDelay(3000);
  if(counter>3){
   counter = 1;
  }
 }
 
 setInterval(() => {
-  document.getElementById('welcome-text').src = "images/icons/welcome"+counter+".png";
+  document.getElementById('welcome-text-image').src = "images/icons/welcome"+counter+".png";
   counter++
 
   reset();
-}, 2960);
+}, 3000);
 
 
 

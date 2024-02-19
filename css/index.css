@@ -289,7 +289,7 @@ section{
     position: absolute;
     bottom: 25%;
     right: 4%;
-    opacity: 0;
+    opacity: 1;
     animation: fade 3s infinite forwards;
 }
 
