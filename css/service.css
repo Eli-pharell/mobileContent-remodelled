@@ -8,7 +8,8 @@
     --color7: #faf3ee;
     --aside-width:95px;
     --mobile-aside-width:28px;
-}
+}/* ALL VARIABLES USED WITHIN CSS */
+
 
 *{
     box-sizing: border-box;
@@ -18,7 +19,9 @@
     font-family: 'Calibri','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     -webkit-tap-highlight-color: rgb(255, 255, 255,0);
     -webkit-focus-ring-color: rgb(255, 255, 255,0);
-}
+}/* GENERAL CODE FOR ALL ELEMENTS */
+
+
 
 *:focus{
     outline: none;
@@ -30,7 +33,9 @@
  input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: var(--color1) !important;
-  }
+  } /* CSS TO REMOVE WHITE BACKGROUND FROM FORM AUTOFILL */
+
+
 
 a{
     color: black;
@@ -77,11 +82,11 @@ body.active{
 
 .policies{
     position: fixed;
+    width: 50%;
+    height: 30rem;
     visibility: hidden;
     background-color: white;
     padding: 2rem 2rem;
-    width: 50%;
-    height: 30rem;
     top: 10%;
     right: 23%;
     z-index: 5;
@@ -145,6 +150,7 @@ body.active{
     rotate: -45deg;
     transform: translate(1.3px, 0px);
 }
+
 aside{
     position:fixed;
     background-color: var(--color1);
@@ -420,7 +426,7 @@ section{
  
  .service-btn{
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 2rem;
     left: 32.5%;
     cursor: pointer;
     width:35%;
@@ -1144,12 +1150,12 @@ input:focus{
     }
 
     #services-tabs{
-        gap: 3rem 0;
+        gap: 6rem 0;
     }
     
     .service-tab{
         width: 96%;
-        height: 32rem;
+        height: 33rem;
     }
 
     .service-tab p{

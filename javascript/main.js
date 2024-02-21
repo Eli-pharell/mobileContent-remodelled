@@ -113,4 +113,4 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
 
 
 const input = document.getElementById("email-entry");
-input.disabled = true; //delete this to acitivate newsletter subscription input
+input.disabled = true; //CLEAR THIS TO ACTIVATE NEWSLETTER SUBSCRIPTION INPUT.

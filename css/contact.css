@@ -8,7 +8,7 @@
     --color7: #f7f3f1;
     --aside-width:95px;
     --mobile-aside-width:28px;
-}
+}/* ALL VARIABLES USED WITHIN CSS */
 
 *{
     box-sizing: border-box;
@@ -18,7 +18,7 @@
     font-family: 'Calibri','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     -webkit-tap-highlight-color: rgb(255, 255, 255,0);
     -webkit-focus-ring-color: rgb(255, 255, 255,0);
-}
+}/* GENERAL CODE FOR ALL ELEMENTS */
 
 *:focus{
     outline: none;
