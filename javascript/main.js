@@ -109,17 +109,14 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
     activeStatus.style.color = "orangered";
 }
 
-var control = document.getElementById('control-centre');
+// var control = document.getElementById('control-centre');
 
-control.addEventListener("touchmove", function(ev){
-    var touchLocation = ev.targetTouches[0];
+// control.addEventListener("touchmove", function(ev){
+//     var touchLocation = ev.targetTouches[0];
 
-    control.style.left = touchLocation.pageX + 'px';
-    control.style.top = touchLocation.pageY + 'px';
-})
-
-
-
+//     control.style.left = touchLocation.pageX + 'px';
+//     control.style.top = touchLocation.pageY + 'px'
+// })
 
 const input = document.getElementById("email-entry");
 input.disabled = true; //CLEAR THIS TO ACTIVATE NEWSLETTER SUBSCRIPTION INPUT.
