@@ -741,6 +741,10 @@ footer{
     height: 35px;
 }
 
+#control-centre{
+    display: none;
+}
+
 
 
 @media (max-width:1200px){
@@ -1163,6 +1167,16 @@ footer{
 
     .images:last-child{
         height: calc(var(--img-height) - 2px);
+    }
+
+    #control-centre{
+        display: unset;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 4;
+        padding: 40px;
+        background-color: red;
     }
       
     

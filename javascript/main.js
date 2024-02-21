@@ -109,7 +109,27 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
     activeStatus.style.color = "orangered";
 }
 
+var dragValue;
 
+function move(id){
+    var element = document.getElementById("control-centre");
+    element.style.position = "absolute";
+    element.onmousedown = ()=>{
+        dragValue = element;
+    }
+}
+
+document.onmouseup = function(e){
+    dragValue = null;
+}
+
+document.onmousemove = (e) =>{
+    var x = e.pageX;
+    var y = e.pageY;
+
+    dragValue.style.left = x + "px";
+    dragValue.style.top = y + "px";
+}
 
 
 const input = document.getElementById("email-entry");
