@@ -109,27 +109,16 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
     activeStatus.style.color = "orangered";
 }
 
-var dragValue;
+var control = document.getElementById('control-centre');
 
-function move(id){
-    var element = document.getElementById("control-centre");
-    element.style.position = "absolute";
-    element.onmousedown = ()=>{
-        dragValue = element;
-    }
-}
+control.addEventListener("touchmove", function(ev){
+    var touchLocation = ev.targetTouches[0];
 
-document.onmouseup = function(e){
-    dragValue = null;
-}
+    control.style.left = touchLocation.pageX + 'px';
+    control.style.top = touchLocation.pageY + 'px';
+})
 
-document.onmousemove = (e) =>{
-    var x = e.pageX;
-    var y = e.pageY;
 
-    dragValue.style.left = x + "px";
-    dragValue.style.top = y + "px";
-}
 
 
 const input = document.getElementById("email-entry");
