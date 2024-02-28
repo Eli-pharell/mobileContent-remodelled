@@ -1,4 +1,6 @@
-var sliderCopy = slide.cloneNode(true);
+const slider = document.getElementById('slider');
+
+var sliderCopy = slider.cloneNode(true);
 document.getElementById("partner-logo-slider").appendChild(sliderCopy);
 
 var swiper = new Swiper(".mySwiper", {

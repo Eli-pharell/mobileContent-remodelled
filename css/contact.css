@@ -5,7 +5,7 @@
     --color4:#ffffff;
     --color5:#01013a;
     --color6:#ffc5a1;
-    --color7: #f7f3f1;
+    --color7: #f4ebe5;
     --aside-width:95px;
     --mobile-aside-width:28px;
 }/* ALL VARIABLES USED WITHIN CSS */
@@ -640,7 +640,7 @@ footer{
 }
 
 #footer-logo{
-    height: 100px;
+    height: 85px;
     margin: 0 0 -2rem 0;
 }
 

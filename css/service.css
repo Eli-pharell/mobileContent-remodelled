@@ -5,7 +5,7 @@
     --color4:#ffffff;
     --color5:#01013a;
     --color6:#ffc5a1;
-    --color7: #faf3ee;
+    --color7: #f4ebe5;
     --aside-width:95px;
     --mobile-aside-width:28px;
 }/* ALL VARIABLES USED WITHIN CSS */
@@ -371,7 +371,6 @@ section{
     text-align: center;
     font-weight: normal;
     font-size: 35px;
-    border-bottom:5px dotted var(--color2);
     padding-bottom: 1.5rem;
     color: var(--color2);
     margin: 0 0 6rem 0;
@@ -440,7 +439,7 @@ section{
     background-position-y:60%;
     background-position-x: 215%;
     background-repeat: no-repeat;
-    transition: 450ms ease-in-out;
+    transition: 400ms ease-in-out;
  }
  
  .service-tab:hover i{
@@ -736,7 +735,7 @@ input:focus{
 }
 
 #footer-logo{
-    height: 100px;
+    height: 85px;
     margin: 0 0 -2rem 0;
 }
 

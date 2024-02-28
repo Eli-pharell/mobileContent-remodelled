@@ -5,7 +5,7 @@
     --color4:#ffffff;
     --color5:#01013a;
     --color6:#ffc5a1;
-    --color7: #faf3ee;
+    --color7: #f4ebe5;
     --aside-width:95px;
     --mobile-aside-width:28px;
 }/* ALL VARIABLES USED WITHIN CSS */
@@ -330,10 +330,18 @@ section{
    height: 100%;
    background-color: rgb(0,0,0,0.6);
    color:white;
-   font-size: 15px;
+   font-size: 18px;
    text-align: center;
    border-radius: 10px;
    transition: ease 600ms;
+}
+
+.profile-text h3{
+    margin: 0 0 0rem 0;
+}
+
+.profile-text>*{
+    transform: translateY(60%);
 }
 
 .picture{
@@ -534,7 +542,7 @@ footer{
 }
 
 #footer-logo{
-    height: 100px;
+    height: 85px;
     margin: 0 0 -2rem 0;
 }
 
