@@ -305,7 +305,7 @@ section{
  .service-tab{
     position: relative;
     width: 31%;
-    height: 30rem;
+    height: 25rem;
     text-align: center;
     background: var(--color4);
     border-radius: 10px;
