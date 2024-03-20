@@ -287,40 +287,6 @@ section{
 }
 
 
-@keyframes fade1{
-    0%{
-        opacity: 0;
-    }
-    16.5%{
-        opacity: 1;
-    }
-    33.3%{
-        opacity: 0;
-    }
-}
-@keyframes fade2{
-    33.3%{
-        opacity: 0;
-    }
-    46.95%{
-        opacity:1;
-    }
-    66.6%{
-        opacity: 0;
-    }
-}
-@keyframes fade3{
-    66.6%{
-        opacity: 0;
-    }
-    83.25%{
-        opacity: 1;
-    }
-    99.9%{
-        opacity: 0;
-    }
-}
-
 #landing-section{
     display: flex;
     position: relative;
@@ -444,22 +410,26 @@ section{
     
 }
 
+#phone-and-shadow   {
+    position: absolute;
+    bottom: 0;
+    width: 45%;
+    height: 60%;
+    z-index: 3;
+}
+
 #phone{
     position: absolute;
     z-index: 5;
-    width: 45%;
-    right: 3%;
-    top: 40%;
-    z-index: 3;
+    width: 100%;
     animation: levitate 2s infinite alternate linear;
 }
 
 #shadow{
     position: absolute;
     background-color: var(--color5);
-    z-index: 3;
-    right: 40%;
-    bottom: 7%;
+    bottom: 3rem;
+    left: 19%;
     transform: rotate3d(30, 0, 1, 80deg);
     box-shadow: 0 0 140px 80px black;
     animation: magnify 2s infinite alternate linear;
@@ -939,27 +909,21 @@ footer{
     height: 35px;
 }
 
-/* #control-centre{
-    position: fixed;
-    left: 70%;
-    top: 80%;
-    z-index: 10;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-} */
 
 
 
 @media (max-width:1200px){
-    #welcome-banner{
-        height: clamp(400px,420px,450px);
-    }
 
-    #welcome-text{
-        left: 60%;
+    :root{
+        --dec-right:0.5%;
+        --dec-top:12%;
     }
+    
+    
 
+    .decoration{
+        scale: 0.9;
+    }
     #main-footer-container>*{
         width:30%;
     }
@@ -1017,25 +981,122 @@ footer{
 }
 
 @media (max-width:992px){
+    
+
     :root{
         --large-text:28px;
+        --dec-right:-6%;
+        --dec-top:12%;
     }
 
 
-    #welcome-banner{
-        height:clamp(250px,300px,350px);
+    #landing-section{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 36rem;
+        margin-bottom: 8rem;
+        padding: 1.5rem 0 0 0;
+        overflow: hidden;
+    }
+    
+    #banner{
+        position: absolute;
+        width: 90%;
+        height: 50px;
+        right: 5%;
+        background-image: url('/images/background/banner.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: 23px 20px 40px -22px var(--color5);
+        z-index: 4;
     }
 
-    #welcome-text{
-        left: 60%;
+    #phone-and-shadow{
+        right: -2%;
+        top: 30%;
     }
-    #test{
-        height: 140%;
+    #phone{
+        top: 20%;
     }
-    .welcome-text-image{
+    
+    #banner-text{
+        margin: .5rem 0 0 5rem;
+    }
+    
+    .sect{
+        width: 50%;
+    }
+    
+    #sect1{
+        position: relative;
+        padding: 7rem 1rem 0 1.5rem;
+        font-size: 18px;
+        color: var(--color5);
+    }
+    
+    #sect1 h1{
+        font-size: clamp(25px, 30px, 35px);
+        color: var(--color2);
+    }
+    
+    #call-to-action{
+        scale: 0.9;
+    }
+    
+    #call-to-action:hover,
+    #call-to-action:hover a{
+        color: #F3D8C7;
+        background-position-x: 50%;
+    }
+    
+    #sect2{
         height: 100%;
     }
-
+    
+    
+    .decoration{
+        scale: .7 .8;
+    }
+          
+    #sparkle1{
+        right:43%;
+        bottom: 20%;
+        rotate: 40deg;
+        scale: 0.9;
+    }
+    #sparkle2{
+        right:23%;
+        bottom: 10%;
+        rotate: 60deg;
+        scale: 0.7;
+    }
+    
+    #sparkle3{
+        right:29%;
+        top: 28%;
+        rotate: 65deg;
+        scale: 0.7;
+    }
+    #sparkle4{
+        right:39%;
+        bottom: 40%;
+        rotate: 70deg;
+        scale: 0.7;
+    }
+    
+    #sparkle5{
+        right:37%;
+        bottom: 47%;
+        rotate: 55deg;
+        scale: 0.5;
+    }
+    #sparkle6{
+        right:22%;
+        bottom: 16%;
+        rotate: 40deg;
+        scale: 0.5;
+    }
 
     #main-footer-container>*{
         width:45%;
@@ -1083,38 +1144,103 @@ footer{
 @media (max-width:768px){
     :root{
         --large-text:26px;
+        --dec-right:-8%;
+        --dec-top:-0.5%;
     }
-    #welcome-text{
-        left: 62%;
-    }
-    #test{
-        height: 110%;
-    }
-    .welcome-text-image{
-        height: 100%;
+   
+
+   #landing-section{
+    display: flex;
+    height:40rem;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-items: flex-start;
+    padding: 1.5rem 0 0 0;
+    overflow: hidden;
+}
+
+    #banner{
+        top: 5%;
+        height: 35px;
+        right: 5%;
     }
 
-    #welcome-banner{
-        background-image: url('/images/background/mobileBanner.png');
-        height:clamp(480px,550px,580px);
+    #phone-and-shadow{
+        right: 12%;
+        top: 2%;
+        width: 60%;
     }
 
-    #welcome-text-container{
+    #phone{
+        top: 40%;
+    }
+
+    #banner-text{
+        margin: .5rem 0 0 5rem;
+    }
+
+    .sect{
+        width: 40%;
+    }
+
+    #sect1{
+        height: 45%;
+        padding: 1rem 1rem 0 1.5rem;
+        font-size: 18px;
         width: 100%;
-        height: 100%;
+        color: var(--color5);
     }
 
-    #mobile-content{
-        position: absolute;
-        top: 35%;
-        left: 3%;
-        width: 95%;
+    #sect1 h1{
+        font-size: clamp(25px, 30px, 35px);
+        color: var(--color2);
     }
-    
-    #welcome-text{
-        height:8% ;
+
+    #call-to-action{
+        scale: 0.9;
+        bottom: 3rem;
+    }
+
+
+    #sect2{
+        height: 60%;
+    }
+
+
+    .decoration{
+        scale: 0.7;
+    }
+
+    .sparkle{
+        translate: -6rem -6rem;
+    }
+        
+    #sparkle1{
+        right:55%;
         bottom: 30%;
-        right: 4%;
+    }
+    #sparkle2{
+        right:22%;
+        bottom: 28%;
+    }
+
+    #sparkle3{
+        right:29%;
+        top: 33%;
+        
+    }
+    #sparkle4{
+        right:45%;
+        bottom: 42%;
+    }
+
+    #sparkle5{
+        right:40%;
+        bottom: 47%;
+    }
+    #sparkle6{
+        right:19%;
+        bottom: 33%;
     }
 
 
@@ -1122,10 +1248,15 @@ footer{
     #main-footer-container>*{
         width:clamp(55%,60%,65%)
     }
+
+    #customer-support{
+        gap:2rem 1rem
+    }
     .support-statements{
-        width: 60%;
+        width: 80%;
     }
     #trending-container{
+        padding:  0 0 0 1rem;
         width: 90%;
         flex-flow: column;
         gap: 2rem;
@@ -1143,11 +1274,105 @@ footer{
 }
 
 @media (max-width:576px){
-    #welcome-banner{
-        background-image: url('/images/background/mobileBanner.png');
-        height:clamp(350px,400px,450px);
+
+    :root{
+        --dec-right:-10%;
+    }
+
+    #landing-section{
+        display: flex;
+        height:40rem;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-items: flex-start;
+        padding: .5rem 0 0 0;
+        overflow: hidden;
     }
     
+        #banner{
+            top: 5%;
+            height: 35px;
+            right: 5%;
+        }
+    
+        #phone-and-shadow{
+            right: 0;
+            top: 2%;
+            width: 80%;
+        }
+    
+        #phone{
+            top: 40%;
+        }
+    
+        #banner-text{
+            margin: .5rem 0 0 5rem;
+        }
+    
+        .sect{
+            width: 40%;
+        }
+    
+        #sect1{
+            height: 45%;
+            padding: 1rem 1rem 0 1.5rem;
+            font-size: 18px;
+            width: 100%;
+            color: var(--color5);
+        }
+    
+        #sect1 h1{
+            font-size: clamp(25px, 30px, 35px);
+            color: var(--color2);
+        }
+    
+        #call-to-action{
+            scale: 0.9;
+            bottom: 0;
+        }
+    
+    
+        #sect2{
+            height: 60%;
+        }
+    
+    
+        .decoration{
+            scale: 0.7;
+        }
+    
+        .sparkle{
+            translate: -6rem -6rem;
+        }
+            
+        #sparkle1{
+            right:58%;
+            bottom: 30%;
+        }
+        #sparkle2{
+            right:20%;
+            bottom: 28%;
+        }
+    
+        #sparkle3{
+            right:29%;
+            top: 33%;
+        }
+        #sparkle4{
+            right:44%;
+            bottom: 42%;
+        }
+    
+        #sparkle5{
+            right:40%;
+            bottom: 47%;
+        }
+        #sparkle6{
+            right:14%;
+            bottom: 33%;
+            scale: 0.45;
+        }
+
     #main-footer-container>*{
         width:90%;
     }
@@ -1158,6 +1383,7 @@ footer{
     #trending-container{
         width: 96%;
         flex-flow: column;
+        margin:  0 0 10rem 0 ;
         gap: 2rem;
         height: fit-content;
     }
@@ -1174,12 +1400,10 @@ footer{
         bottom: 0rem !important;
      }
     
-     .swiper-pagination-bullet-active{
-        background-color: var(--color1) !important;
-     }
      .swiper-pagination-bullet{
         padding: 6px;
      }
+
      #copyright-and-socials{
         height: 20%;
         display: flex;
