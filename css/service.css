@@ -1728,8 +1728,8 @@ input:focus{
         right: 25%;
     }
 
-    .service-image{
-        background-color: black;
+    .opt1{
+        display: none;
     }
 
 
