@@ -1796,7 +1796,8 @@ input:focus{
 
     .opt2::before,
     .opt2::after{
-        scale: .8;
+        scale: .83;
+        left: 0;
     }
 
     #services-tabs{
