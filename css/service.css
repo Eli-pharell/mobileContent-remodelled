@@ -1754,19 +1754,20 @@ input:focus{
     }
 
     .service-btn-alt{
-        bottom: clamp(1%,4%,6%);
+        bottom: clamp(1%,2%,4%);
     }
     
 
     .opt2 button,
     .opt3 button{
-        bottom: clamp(4%,6%,7%);
+        bottom: clamp(2%,4%,5%);
     }
 
 
     .opt3{
         margin: 0 0 2rem 0;
     }
+
 
     .sect-shape{
         position: absolute;
@@ -1795,11 +1796,7 @@ input:focus{
 
     .opt2::before,
     .opt2::after{
-        scale: .89;
-    }
-
-    #service-header{
-        font-size:30px;
+        scale: .83;
     }
 
     #services-tabs{
