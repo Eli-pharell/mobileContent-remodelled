@@ -1754,25 +1754,25 @@ input:focus{
     }
 
     .service-btn-alt{
-        bottom: clamp(5%,8%,10%);
+        bottom: clamp(3%,6%,8%);
     }
     
 
     .opt2 button,
     .opt3 button{
-        bottom: clamp(8%,10%,11%);
+        bottom: clamp(6%,8%,9%);
     }
 
 
     .opt3{
-        margin: 0;
+        margin: 0 0 2rem 0;
     }
 
     .sect-shape{
         position: absolute;
         border-radius: 100%;
         width: 100%;
-        height: 45%;
+        height: clamp(40%,42%,45%);
     }
     .shp1{  
         translate: 6rem 5rem;
@@ -1790,7 +1790,7 @@ input:focus{
     }
 
     .opt1::before{
-        right: 25%;
+        right: clamp(25%,28%,30%);
     }
 
     .opt2::before,
@@ -1815,6 +1815,7 @@ input:focus{
     .service-tab p{
         margin: 0 0 1rem 0;
     }
+    
     #request-form-container{
         display: none;
     }
