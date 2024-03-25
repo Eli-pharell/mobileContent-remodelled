@@ -1754,13 +1754,13 @@ input:focus{
     }
 
     .service-btn-alt{
-        bottom: clamp(3%,6%,8%);
+        bottom: clamp(1%,4%,6%);
     }
     
 
     .opt2 button,
     .opt3 button{
-        bottom: clamp(6%,8%,9%);
+        bottom: clamp(4%,6%,7%);
     }
 
 
