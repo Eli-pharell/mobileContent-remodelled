@@ -1675,7 +1675,7 @@ input:focus{
 
     #services{
         position: relative;
-        font-size: 4rem;
+        font-size: 3.5rem;
         z-index: 2;
     }
 
@@ -1687,17 +1687,27 @@ input:focus{
 
     #service-nav li{
         z-index: 2;
+        font-size:1.2rem;
     }
 
     #sect-decoration{
         z-index: 1;
     }
+
+    .service-btn-alt{
+        bottom: 8%;
+    }
     
+
+    .opt2 button,
+    .opt3 button{
+        bottom: 10%;
+    }
     .sect-shape{
         position: absolute;
         border-radius: 100%;
-        width: 75%;
-        height: 40%;
+        width: 92%;
+        height: 42%;
     }
     .shp1{  
         translate: 6rem 5rem;
@@ -1712,6 +1722,14 @@ input:focus{
     .shp3{
         translate: 5rem -3rem;
         scale: 1;
+    }
+
+    .opt1::before{
+        right: 25%;
+    }
+
+    .service-image{
+        background-color: black;
     }
     
 
