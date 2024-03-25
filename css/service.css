@@ -1682,12 +1682,12 @@ input:focus{
     
 
     #service-nav{
-        margin: 1.4rem;
+        margin:0 0 0 1.4rem;
     }
 
     #service-nav li{
         z-index: 2;
-        font-size:1.2rem;
+        font-size:1.1rem;
     }
 
     #sect-decoration{
@@ -1731,7 +1731,7 @@ input:focus{
     .service-image{
         background-color: black;
     }
-    
+
 
     .policies{
         right: 5%;
