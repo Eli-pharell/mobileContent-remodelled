@@ -1789,7 +1789,7 @@ input:focus{
 
     .opt2::before,
     .opt2::after{
-        scale: .825;
+        scale: .82;
         left: 0;
     }
 
