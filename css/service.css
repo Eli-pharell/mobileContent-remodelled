@@ -1426,10 +1426,6 @@ input:focus{
         height: 800px;
     }
 
-    .opt2::after,
-    .opt2::before{
-        scale: .9;
-    }
 
     .opt1::before{
         right: clamp(16%,18%,20%);
@@ -1567,10 +1563,7 @@ input:focus{
     .shp3{
         translate: 6rem -3rem;
     }
-    .opt2::after,
-    .opt2::before{
-        scale: .9;
-    }
+    
 
     .opt1::before{
         right: 25%;
@@ -1796,7 +1789,7 @@ input:focus{
 
     .opt2::before,
     .opt2::after{
-        scale: .83;
+        scale: .825;
         left: 0;
     }
 
