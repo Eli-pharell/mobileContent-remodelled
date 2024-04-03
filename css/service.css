@@ -22,6 +22,7 @@
     font-family: 'Calibri','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     -webkit-tap-highlight-color: rgb(255, 255, 255,0);
     -webkit-focus-ring-color: rgb(255, 255, 255,0);
+    scroll-behavior: smooth;
 }/* GENERAL CODE FOR ALL ELEMENTS */
 
 
