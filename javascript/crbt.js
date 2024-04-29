@@ -40,6 +40,9 @@ var pagination_buttons = $('#index-btns button');
 
 if(window.matchMedia("(max-width:480px)").matches){
     table_size = 5;
+    mobileDisplay();
+
+    pagination.buttons.remove()
 }
 
 
@@ -55,9 +58,22 @@ function displayIndexButtons(){
     }
     pagination.append('<button class="btn" onclick = "next()">Next</button>');
 
-
     highlightIndexButton();
 
+}
+
+function mobileDisplay(){
+    preloadCalculations();
+
+    pagination_buttons.remove()
+    pagination.append('<i class="fas fa-angle-left" onclick = "prev()"></i>');
+
+    for(var i=1; i<=max_index; i++){
+        pagination.append('<button index="'+i+'" class="btn" onclick = "indexPagination('+i+')" >'+i+'</button>');
+    }
+    pagination.append('<i class="fas fa-angle-right" onclick = "next()"></i>');
+
+    highlightIndexButton();
 }
 
 function preloadCalculations(){
@@ -106,8 +122,11 @@ function highlightIndexButton(){
  }
 
 
+ displayIndexButtons();
 
-displayIndexButtons();
+
+
+
 
 function next(){
     if(current_index<max_index){

@@ -380,7 +380,7 @@ td a:hover{
     }
 
     #song-table{
-        padding: 2.5rem 0 0 0;
+        padding: 6rem 0 0 0;
     }
 
     #index-btns{
@@ -466,7 +466,20 @@ td a:hover{
         font-size: 18px;
         transition: 250ms;
     }
-      
+
+    #index-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 .6rem;
+    }
+
+    #index-btns i:hover{
+        color: var(--color3);
+    }
+    
+    
+
 }
 
 @media (max-height:0px) {
