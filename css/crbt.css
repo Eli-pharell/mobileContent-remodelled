@@ -568,7 +568,7 @@ td a:hover{
     }
 }
 
-@media (max-height:700px) {
+@media (max-height:px) {
     header{
         position: sticky;
         top: 0;

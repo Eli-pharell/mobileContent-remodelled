@@ -38,6 +38,10 @@ var max_index;
 var pagination = $('#index-btns');
 var pagination_buttons = $('#index-btns button');
 
+if(window.matchMedia("(max-width:480px)")){
+    table_size = 5;
+}
+
 
 function displayIndexButtons(){
 
