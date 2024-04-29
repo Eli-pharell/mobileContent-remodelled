@@ -8,6 +8,7 @@ const icon = document.getElementById("icon");
 const logo = document.getElementById("logo");
 const overlay = document.getElementById("overlay");
 const body = document.querySelector("body");
+const navBubble = document.getElementById('bubble');
 
 //variables and contants for policy and terms popup.
 const privacy = document.getElementById('privacy');
@@ -31,6 +32,27 @@ navBtn.onclick = ()=>{
     logo.classList.toggle("active");
     overlay.classList.toggle("active");
     body.classList.toggle("active");
+    navBubble.classList.toggle("active");
+    document.querySelector(".line1").classList.toggle('active');
+    document.querySelector(".line2").classList.toggle('active');
+    document.querySelector(".line3").classList.toggle('active');
+}
+
+navBubble.onclick = () =>{
+    aside.classList.toggle("active")
+    navText.forEach(txt=>
+        {
+            txt.classList.toggle("active");
+        });
+
+    icon.classList.toggle("active");
+    logo.classList.toggle("active");
+    overlay.classList.toggle("active");
+    body.classList.toggle("active");
+    navBubble.classList.add("active");
+    document.querySelector(".line1").classList.toggle('active');
+    document.querySelector(".line2").classList.toggle('active');
+    document.querySelector(".line3").classList.toggle('active');
 }
 
 
@@ -46,6 +68,10 @@ overlay.onclick = ()=>{
     logo.classList.remove("active");
     overlay.classList.remove("active");
     body.classList.remove("active");
+    navBubble.classList.remove("active");
+    document.querySelector(".line1").classList.remove('active');
+    document.querySelector(".line2").classList.remove('active');
+    document.querySelector(".line3").classList.remove('active');
 
 }
 

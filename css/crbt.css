@@ -20,7 +20,7 @@ html::-webkit-scrollbar{
 
 html::-webkit-scrollbar-thumb{
     width: 100%;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(200, 200, 200);
 }
 
 button{
@@ -87,7 +87,7 @@ section{
 
 #crbt-text div{
     position: relative;
-    top: 35%;
+    top: 30%;
     color: white;
     word-spacing: .5rem;
 
@@ -95,7 +95,7 @@ section{
 
 
 #crbt-text h1{
-    font-size: 35px;
+    font-size: 33px;
     margin: 0 0 1rem 0;
 }
 
@@ -103,7 +103,6 @@ section{
 
 #crbt-text p{
     position: relative;
-    top: 40%;
     font-size: 25px;
 }
 
@@ -178,6 +177,7 @@ section{
 
 
 
+
 .phone-elmnt{
     position: absolute;
     z-index: 1;
@@ -211,7 +211,6 @@ section{
     background-color:white;
     border-collapse: collapse;
     font-size: 18px;
-    font-weight: 600;
     z-index: 2;
 }
 

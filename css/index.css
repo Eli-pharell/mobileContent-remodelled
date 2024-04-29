@@ -51,7 +51,7 @@ body.active{
     width:100%;
     height:100vh;
     left: -100%;
-    z-index: 3;
+    z-index: 4;
     transition: 450ms ease-in-out;
 }
 
@@ -66,12 +66,16 @@ body.active{
     height:100vh;
     left: 0;
     display: none;
-    z-index: 3;
+    z-index: 4;
     transition: 450ms ease-in-out;
 }
 
 #overlay2.active{
     display: block;
+}
+
+#bubble{
+    display: none;
 }
 
 .policies{
@@ -180,12 +184,33 @@ nav>*{
     right: -3px;
     rotate: 90deg;
     cursor: pointer;
+    padding: 10px 10px 10px 20px;
 }
 
 .line{
+    position: relative;
+    top: -10px;
     width: 20px;
     height: 2px;
     background-color: var(--color5);
+    transition: transform 250ms ease;
+    transition: rotate 250ms ease;
+}
+
+.line1.active{
+    transform-origin: left;
+    transform: translate(8.8px, -1px);
+    rotate: 50deg;
+}
+
+.line2.active{
+    display: none;
+}
+
+.line3.active{
+    transform-origin: right;
+    transform: translate(15.5px, -9px);
+    rotate: 125deg;
 }
 
 .lines:hover .line{
@@ -194,7 +219,6 @@ nav>*{
 
 .line:not(:last-child){
     margin-bottom: 0.1rem;
-
 }
 
 #company-logo{
@@ -307,7 +331,7 @@ section{
     background-size: 100%;
     background-repeat: no-repeat;
     box-shadow: 23px 20px 40px -22px var(--color5);
-    z-index: 4;
+    z-index: 2;
 }
 
 #banner-text{
@@ -421,7 +445,7 @@ section{
 
 #phone{
     position: absolute;
-    z-index: 5;
+    z-index: 2;
     width: 100%;
     animation: levitate 2s infinite alternate linear;
 }
@@ -441,7 +465,7 @@ section{
     overflow: hidden;
     width: 50px;
     height: 50px;
-    z-index: 4;
+    z-index: 3;
 }
 
 .ln1,
@@ -1164,6 +1188,7 @@ footer{
         top: 5%;
         height: 35px;
         right: 5%;
+        z-index: 2;
     }
 
     #phone-and-shadow{
@@ -1438,13 +1463,24 @@ footer{
 }
 
 @media (max-width:480px){
-    #welcome-banner{
-        background-image: url('/images/background/MainMobileBanner.png');
-        margin-bottom:10rem;
+
+    #bubble{
+        display: unset;
+        position: fixed;
+        bottom: 2%;
+        right: 2%;
+        z-index: 3;
+        transition: 250ms ease;
     }
-    #welcome-text{
-        height: 8%;
-        left:55%;
+
+    #bubble.active{
+        opacity: 0;
+    }
+
+    #circle{
+        background-color: var(--color3);
+        padding: 20px;
+        border-radius: 50%;
     }
 
 
@@ -1455,8 +1491,8 @@ footer{
     }
     
     aside{
-        width: var(--mobile-aside-width);
-    }
+        width: 0;
+    } 
     
     aside.active{
         width: 210px;
@@ -1504,8 +1540,12 @@ footer{
 
 
     section{
-        margin: 0 0 0 var(--mobile-aside-width);
-        width: calc(100% - var(--mobile-aside-width));
+        margin: 0 0 0 0;
+        width: 100% ;
+    }
+
+    #call-to-action{
+        right: unset;
     }
 
     #customer-support{
@@ -1515,7 +1555,7 @@ footer{
 
     .support-statements{
         height: 350px;
-        width: 100%;
+        width: 97%;
     }
 
     .swiper-pagination{
@@ -1533,8 +1573,8 @@ footer{
     
     footer{
         padding: 1rem  0 0 0;
-        margin: 0 0 0 var(--mobile-aside-width);
-        width: calc(100% - var(--mobile-aside-width));
+        margin: 0 0 0 0;
+        width: 100%;
         height: fit-content;
         background-color: var(--color2);
     }
