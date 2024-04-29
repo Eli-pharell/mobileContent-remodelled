@@ -124,3 +124,51 @@ function indexPagination(index){
     current_index = parseInt(index);
     highlightIndexButton();
 }
+
+
+let cta = document.getElementById('call-to-action');
+let rtn = document.getElementById('return');
+
+
+cta.onclick = () =>{
+    let test = document.getElementById("song-table");
+    let post = test.getBoundingClientRect();
+
+    window.scrollBy(0, 550);
+    rtn.classList.add("active");
+
+}
+
+
+rtn.onclick = () =>{
+    window.scrollBy(0, -550);
+    rtn.classList.remove("active");
+}
+
+if (window.matchMedia("(max-width: 480px)").matches){
+    cta.onclick = () =>{
+        let test = document.getElementById("song-table");
+        let post = test.getBoundingClientRect();
+    
+        window.scrollBy(0, 1000);
+        rtn.classList.add("active");
+    
+    }
+    
+    
+    rtn.onclick = () =>{
+        window.scrollBy(0, -550);
+        rtn.classList.remove("active");
+    }
+}
+
+
+
+
+
+
+
+
+
+console.log(post.top);
+
