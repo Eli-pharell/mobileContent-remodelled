@@ -588,4 +588,9 @@ td a:hover{
     #song-table{
         height: 90vh;
     }
+
+    
+    #song-table{
+        padding: 0rem 0 0 0;
+    }
 }
