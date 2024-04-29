@@ -383,95 +383,32 @@ td a:hover{
         padding: 2.5rem 0 0 0;
     }
 
+    #index-btn{
+        padding: 0;
+    }
 
-    #design-assets{
-        display:flex;
-        align-items: center;
+    #table-footer{
+        display: flex;
         justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        background-color: red;
     }
-    
-    #white-box{
-        position: relative;
-        height: 100%;
-        width: 90%;
-    }
-    
-    
-    
-    .petal2{
-        position: absolute;
-        border-radius: 31% 80% 58% 50%/ 58% 58% 58% 58%;
-        z-index: 1;
-        background-color: rgb(255, 243, 230, .7);
-        width: 90%;
-        height: 100%;
-        rotate: 120deg;
-        bottom: -2rem;
-        left: 5%;
+
+    #table-footer button{
+        padding: 4px 10px;
+        
     }
     
     #write-up{
         position: relative;
     }
-    
-    #phone{
-        position: absolute;
-        height: 85%;
-        bottom: 0;
-        left: 24%;
-        z-index:3;
-    }
-    
-    .music{
-        position: absolute;
-        z-index: 1;
-        left: -110%;
-        bottom: -5%;
-        height: 50%;
-        rotate: 50deg;
-    }
-    
-    .twirl{
-        position: absolute;
-        z-index: 2;
-        left: 15%;
-        top:20%;
-        height: 15%;
-        rotate: 50deg;      
-    }
-    
-    .flower{
-        position: absolute;
-        z-index: 2;
-        left: 15%;
-        top:20%;
-        height: 15%;
-        rotate: 50deg;   
-    }
-    
-    
-    
-    
-    .phone-elmnt{
-        position: absolute;
-        z-index: 1;
-        left: -8%;
-        height: 30%;
-        rotate: 50deg;
-    }
-    
-    .twirl-elmnt{
-        position: absolute;
-        z-index: 2;
-        height: 22%;
-        left: 12%;
-        bottom: 5%;
-        rotate: 300deg;
-    }
-    
+        
     #instructions{
         position: relative;
         text-indent: 0;
+        text-align: center;
         font-size: 16px;
         padding: 0 .5rem;
         z-index: 1;
@@ -525,7 +462,7 @@ td a:hover{
     #foot-writing{
         text-indent: 0;
         padding: 0 .5rem;
-
+        text-align: center;
         font-size: 16px;
     }
     
