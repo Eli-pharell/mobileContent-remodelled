@@ -247,7 +247,7 @@ section{
     position: relative;
     text-indent: 1.5rem;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: normal;
     z-index: 1;
 }
 
@@ -296,7 +296,7 @@ section{
 
 #foot-writing{
     text-indent: 1rem;
-    font-weight: 900;
+    font-weight: normal;
     font-size: 18px;
 }
 
@@ -377,6 +377,10 @@ td a:hover{
     #crbt-text p{
         position: relative;
         font-size: 17px;
+    }
+
+    #song-table{
+        padding: 2.5rem 0 0 0;
     }
 
 
@@ -469,7 +473,6 @@ td a:hover{
         position: relative;
         text-indent: 0;
         font-size: 16px;
-        font-weight: 900;
         padding: 0 .5rem;
         z-index: 1;
     }
@@ -522,8 +525,8 @@ td a:hover{
     #foot-writing{
         text-indent: 0;
         padding: 0 .5rem;
-        font-weight: 900;
-        font-size: 18px;
+
+        font-size: 16px;
     }
     
     #table-footer button{
@@ -565,8 +568,23 @@ td a:hover{
     }
 }
 
-@media (max-height:1600px) {
+@media (max-height:844px) {
     header{
+        position: sticky;
+        top: 0;
+        width: 100%;
         height: 10vh;
+        padding: 1rem 1rem 0rem 1rem;
+        color: var(--color3);
+        font-size: 1.2rem;
+    }
+
+    #section1{
+        height: 90vh;
+        top: 10vh;
+    }
+
+    #song-table{
+        height: 90vh;
     }
 }
