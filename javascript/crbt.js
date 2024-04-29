@@ -150,7 +150,7 @@ if (window.matchMedia("(max-width: 480px)").matches){
         let test = document.getElementById("song-table");
         let post = test.getBoundingClientRect();
     
-        window.scrollBy(0, 600);
+        window.scrollBy(0, 700);
         rtn.classList.add("active");
     
     }
