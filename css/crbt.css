@@ -13,6 +13,10 @@
     outline: none;
 }
 
+body{
+    overflow: hidden;
+}
+
 html::-webkit-scrollbar{
     width:13px;
     background-color: rgb(220, 220, 220,.2);
