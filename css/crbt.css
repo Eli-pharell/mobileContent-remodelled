@@ -344,6 +344,18 @@ td a:hover{
 
 @media (max-width:480px){
 
+    body{
+        overflow: hidden;
+    }
+
+    #song-table{
+        transition: 600ms ease;
+    }
+
+    #song-table.active{
+        transform: translateY(-601px);
+    }
+
     #section1{
         flex-direction: column;
     }

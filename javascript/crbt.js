@@ -150,18 +150,23 @@ rtn.onclick = () =>{
 }
 
 if (window.matchMedia("(max-width: 480px)").matches){
+
+
     cta.onclick = () =>{
         let test = document.getElementById("song-table");
         let post = test.getBoundingClientRect();
     
-        window.scrollBy(0, 660);
+        test.classList.add('active');
         rtn.classList.add("active");
     
     }
     
     
     rtn.onclick = () =>{
-        window.scrollBy(0, -550);
+
+        let test = document.getElementById("song-table");
+        
+        test.classList.remove('active');
         rtn.classList.remove("active");
     }
 }
