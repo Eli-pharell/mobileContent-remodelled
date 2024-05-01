@@ -350,10 +350,11 @@ td a:hover{
 
     #song-table{
         transition: 600ms ease;
+        height: 91vh;
     }
 
     #song-table.active{
-        transform: translateY(-601px);
+        transform: translateY(-91vh);
     }
 
     #section1{
