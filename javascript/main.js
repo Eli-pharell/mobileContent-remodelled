@@ -139,11 +139,6 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
 }
 
 
-let rst = body.getBoundingClientRect();
-var rstT = rst.top,
-    rstL = rst.left,
-    rstR = rst.right,
-    rstB = rst.bottom;
 
 let initialX = 0,
     initialY = 0;
