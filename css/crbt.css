@@ -303,7 +303,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0rem 1rem .5rem 0;
+    margin: 0rem 1.5rem .5rem 0;
 }
 
 #foot-writing{
@@ -325,6 +325,10 @@ section{
     text-align: center;
     align-items: center;
     margin: .5rem 0 0 0;
+}
+
+#index-btns i{
+    font-size: 20px;
 }
 
 #index-btns i:hover{
