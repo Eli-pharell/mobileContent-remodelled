@@ -1339,7 +1339,7 @@ footer{
         align-items: flex-start;
         justify-items: flex-start;
         padding: .5rem 0 2rem 0;
-        overflow: hidden;
+        overflow: hidden;   
     }
     
         #banner{
@@ -1381,7 +1381,7 @@ footer{
     
         #call-to-action{
             scale: 0.9;
-            bottom: 0;
+            bottom: -1rem;
             right: 2%;
         }
     
@@ -1590,9 +1590,14 @@ footer{
         width: 100% ;
     }
 
+    #landing-section{
+        height: 55rem;
+        background-color: red;
+    }
+
     #call-to-action{
         right: unset;
-        bottom: -1.3rem;
+        bottom: -1rem;
     }
 
     #customer-support{
