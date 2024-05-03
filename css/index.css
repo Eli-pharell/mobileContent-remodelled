@@ -1330,11 +1330,11 @@ footer{
 
     #landing-section{
         display: flex;
-        height:40rem;
+        height:42rem;
         flex-direction: column-reverse;
         align-items: flex-start;
         justify-items: flex-start;
-        padding: .5rem 0 0 0;
+        padding: .5rem 0 2rem 0;
         overflow: hidden;
     }
     
@@ -1378,6 +1378,7 @@ footer{
         #call-to-action{
             scale: 0.9;
             bottom: 0;
+            right: 2%;
         }
     
     
@@ -1587,7 +1588,7 @@ footer{
 
     #call-to-action{
         right: unset;
-        margin: .5rem 0 0 0;
+        bottom: -1.3rem;
     }
 
     #customer-support{
