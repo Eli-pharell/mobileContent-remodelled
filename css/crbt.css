@@ -370,13 +370,17 @@ td a:hover{
     }
 
     #song-table{
-        padding: 6rem 0 0 0;
+        padding: 4rem 0 0 0;
         transition: 600ms ease;
         height: 91vh;
     }
 
     #song-table.active{
         transform: translateY(-91vh);
+    }
+
+    #return{
+        scale: 1;
     }
 
     #section1{
