@@ -38,6 +38,8 @@ navBtn.onclick = ()=>{
     document.querySelector(".line3").classList.toggle('active');
 }
 
+
+//mobile navigation bubble
 navBubble.onclick = () =>{
     aside.classList.toggle("active")
     navText.forEach(txt=>
@@ -50,6 +52,7 @@ navBubble.onclick = () =>{
     overlay.classList.toggle("active");
     body.classList.toggle("active");
     navBubble.classList.add("active");
+    
     document.querySelector(".line1").classList.toggle('active');
     document.querySelector(".line2").classList.toggle('active');
     document.querySelector(".line3").classList.toggle('active');
@@ -135,53 +138,94 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
     activeStatus.style.color = "orangered";
 }
 
+let initialX = 0,
+    initialY = 0;
+let moveElement = false;
 
+//Events Object
+let events = {
 
-var el, avail;
+    mouse: {
+        down: 'mousedown',
+        move: 'mousemove',
+        up: 'mouseup',
+    },
 
-
-
-// function dragStart(evt){
-//     el = evt.target;
-
-//     if(el.getAttribute('draggable')=='true'){
-//         avail = 'available';
-//     } else {
-//         avail ='';
-// }
-// }
-
-// function drag(evt){
-//     if(avail == 'available'){
-//         el.style.position = "absolute";
-//         el.style.left = evt.touches[0].clientX-el.clientWidth/2;
-//         el.style.top = evt.touches[0].clientY-el.clientHeight/2;
-//     }
-//     evt.preventDefault();
-// }
-
-// function drop(){
-
-// }
-
-var dragValue;
-
-function move(id){
-    var element = document.getElementById('bubble');
-    element.style.position ='absolute';
-    
-    element.ontouchend = function(){
-        dragValue = element;
+    touch: {
+        down: "touchtart",
+        move: "touchmove",
+        up: "touchend",
     }
+    
+};
 
-    document.ontouchmove = function(e){
-        var x = e.pageX;
-        var y = e.pageY;
 
-        dragValue.style.left = x + 'px';
-        dragValue.style.top = y + 'px';
+
+let deviceType = "";
+
+//Detect touch device
+
+const isTouchDevice = () =>{
+    try{
+        //try to create touchEvent.
+
+        document.createEvent("TouchEvent");
+        deviceType = "touch";
+        return true;
+    } catch(e){
+        deviceType = "mouse";
+        return false;
     }
 }
+
+isTouchDevice();
+
+
+//start touch start
+navBubble.addEventListener(events[deviceType].down,
+(e) => {
+    e.preventDefault();
+
+    initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+    initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+
+    moveElement = true;
+})
+
+navBubble.addEventListener(events[deviceType].move,
+(e) =>{
+    if(moveElement){
+        e.preventDefault();
+        let newX = !isTouchDevice() ?  e.clientX : e.touches[0].clientX;
+        let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+
+    navBubble.style.top = navBubble.offsetTop - (initialY - newY) + "px";
+    navBubble.style.left = navBubble.offsetLeft - (initialX - newX) + "px";
+
+    initialX = newX;
+    initialY = newY;
+    }
+});
+
+
+//touch end
+
+navBubble.addEventListener(events[deviceType].up,
+(stopMovement = (e) => {
+    moveElement = false
+}));
+
+navBubble.addEventListener("mouseleave", stopMovement);
+
+navBubble.addEventListener(events[deviceType].up,
+(e) => {
+    moveElement = false;
+})
+
+
+
+
+
 
 
 
