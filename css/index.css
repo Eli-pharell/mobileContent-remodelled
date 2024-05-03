@@ -1553,6 +1553,7 @@ footer{
 
     #call-to-action{
         right: unset;
+        margin: .5rem 0 0 0;
     }
 
     #customer-support{
