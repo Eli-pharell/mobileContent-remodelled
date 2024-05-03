@@ -1805,6 +1805,13 @@ input:focus{
         bottom: clamp(1%,2%,4%);
     }
     
+    .service-option{
+        height:650px;
+    }
+
+    .service-image{
+        height: 44%;
+    }
 
     .opt2 button,
     .opt3 button{
