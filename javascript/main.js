@@ -230,8 +230,8 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
 
 
 
-
+ document.querySelector(".col3").children[1].lastElementChild.remove();//CLEAR TO DISPLAY TERMS AND CONDITIONS LINK AT THE FOOTER OF THE PAGE.
 
 
 const input = document.getElementById("email-entry");
-input.disabled = true; //CLEAR THIS TO ACTIVATE NEWSLETTER SUBSCRIPTION INPUT.
+ input.disabled = true; //CLEAR THIS TO ACTIVATE NEWSLETTER SUBSCRIPTION INPUT.

@@ -824,7 +824,9 @@ to{
     height: 5rem;
 }
 
-
+.row-data h3{
+    font-weight: 600;
+}
 .row-data input,
 .row-data textarea,
 .row-data select{
