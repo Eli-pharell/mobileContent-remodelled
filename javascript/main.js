@@ -141,27 +141,46 @@ var el, avail;
 
 
 
-function dragStart(evt){
-    el = evt.target;
+// function dragStart(evt){
+//     el = evt.target;
+
+//     if(el.getAttribute('draggable')=='true'){
+//         avail = 'available';
+//     } else {
+//         avail ='';
+// }
+// }
+
+// function drag(evt){
+//     if(avail == 'available'){
+//         el.style.position = "absolute";
+//         el.style.left = evt.touches[0].clientX-el.clientWidth/2;
+//         el.style.top = evt.touches[0].clientY-el.clientHeight/2;
+//     }
+//     evt.preventDefault();
+// }
+
+// function drop(){
+
+// }
+
+var dragValue;
+
+function move(id){
+    var element = document.getElementById('bubble');
+    element.style.position ='absolute';
     
-    if(el.getAttribute('draggable')=='true'){
-        avail = 'available';
-    } else {
-        avail ='';
-}
-}
-
-function drag(evt){
-    if(avail == 'available'){
-        el.style.position = "absolute";
-        el.style.left = evt.touches[0].clientX-el.clientWidth/2;
-        el.style.top = evt.touches[0].clientY-el.clientHeight/2;
+    element.ontouchend = function(){
+        dragValue = element;
     }
-    evt.preventDefault();
-}
 
-function drop(){
+    document.ontouchmove = function(e){
+        var x = e.pageX;
+        var y = e.pageY;
 
+        dragValue.style.left = x + 'px';
+        dragValue.style.top = y + 'px';
+    }
 }
 
 

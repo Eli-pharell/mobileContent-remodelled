@@ -1469,8 +1469,13 @@ footer{
         position: fixed;
         bottom: 2%;
         right: 2%;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: blue;
         z-index: 3;
         transition: 250ms ease;
+
+
     }
 
     #bubble.active{
