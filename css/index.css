@@ -1591,13 +1591,19 @@ footer{
     }
 
     #landing-section{
-        height: 55rem;
-        background-color: red;
+        height: 50rem;
+        padding-bottom: 1rem 0 0 2rem;
     }
 
     #call-to-action{
         right: unset;
-        bottom: -1rem;
+        bottom: -2rem;
+    }
+
+    #phone-and-shadow{
+        right: -10%;
+        top: -1%;
+        width: 80%;
     }
 
     #customer-support{
