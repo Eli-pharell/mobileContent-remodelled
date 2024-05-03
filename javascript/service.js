@@ -43,12 +43,12 @@ serv6.onclick = scroller.bind(null, 2150);
 
 
 if (window.matchMedia("(max-width: 480px)").matches) {
-    serv1.onclick = scroller.bind(null, 535 );
-    serv2.onclick = scroller.bind(null, 1250);
-    serv3.onclick = scroller.bind(null, 2000);
-    serv4.onclick = scroller.bind(null, 2600);
-    serv5.onclick = scroller.bind(null, 3110);
-    serv6.onclick = scroller.bind(null, 3650);
+    serv1.onclick = scroller.bind(null, 545 );
+    serv2.onclick = scroller.bind(null, 1260);
+    serv3.onclick = scroller.bind(null, 2010);
+    serv4.onclick = scroller.bind(null, 2610);
+    serv5.onclick = scroller.bind(null, 3120);
+    serv6.onclick = scroller.bind(null, 3640);
   }
 
 
