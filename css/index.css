@@ -1591,8 +1591,9 @@ footer{
     }
 
     #landing-section{
-        height: 50rem;
+        height: 55rem;
         padding-bottom: 1rem 0 0 2rem;
+        /* background-color: red; */
     }
 
     #call-to-action{
