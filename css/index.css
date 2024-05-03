@@ -1611,6 +1611,13 @@ footer{
         top: 70%;
     }
 
+    #back-text{
+        font-size:20rem;
+        top: 60%;
+        left: unset;
+        right: -65%;
+    }
+
     #customer-support{
         gap: 3rem;
         margin-top: 0;
