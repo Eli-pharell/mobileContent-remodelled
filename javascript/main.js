@@ -230,7 +230,7 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
 
 
 
- document.querySelector(".col3").children[1].lastElementChild.remove();//CLEAR TO DISPLAY TERMS AND CONDITIONS LINK AT THE FOOTER OF THE PAGE.
+ document.querySelector(".col3").children[1].lastElementChild.remove();//CLEAR TO DISPLAY TERMS AND CONDITIONS LINK AT THE FOOTER OF THE
 
 
 const input = document.getElementById("email-entry");

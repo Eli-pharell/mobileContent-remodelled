@@ -1695,8 +1695,8 @@ input:focus{
     #bubble{
         display: unset;
         position: fixed;
-        top: 2%;
-        right: 2%;
+        top: 1%;
+        right: 1%;
         width: 58px;
         height: 58px;
         border-radius: 50%;
@@ -1704,15 +1704,34 @@ input:focus{
         transition: 250ms ease;
     }
 
+    #bubble i{
+        position: relative;
+        top: -8px;
+        font-size: 14px;
+    }
+
     #bubble.active{
         opacity: 0;
     }
 
     #circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: var(--color3);
-        padding: 20px;
-        border-radius: 50%;
+        height: 58px;
+        width: 58px;
+        border-radius: 10%;
+        scale: .8;
     }
+
+
+
+    #circle i{
+        color: white;
+    }
+
+
     .policies{
         right: 5%;
         width: 80%;
