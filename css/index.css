@@ -10,7 +10,7 @@
     --color7: #f4ebe5;
     --aside-width:95px;
     --mobile-aside-width:28px;
-    --large-text:clamp(30px, 35px, 40px);
+    --large-text:clamp(25px, 30px, 35px);
     --dec-right:2.5%;
     --dec-top:12%;
 
@@ -21,8 +21,7 @@
     padding:0;
     border: 0;
     margin: 0;
-    font-family: "Farsan", cursive;
-    font-weight: 550;
+    font-family: 'Calibri','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     -webkit-tap-highlight-color: rgb(255, 255, 255,0);
     -webkit-focus-ring-color: rgb(255, 255, 255,0);
     scroll-behavior: smooth;
@@ -348,13 +347,13 @@ section{
 #sect1{
     position: relative;
     padding: 7rem 1rem 0 1.5rem;
-    font-size: 30px;
+    font-size: 26px;
     color: var(--color5);
+    
 }
 
 #sect1 h1{
-    font-size: 42px;
-    font-weight: 600;
+    font-size: 36px;
     color: var(--color2);
 }
 
@@ -610,7 +609,7 @@ section{
     text-align: left;
     height: 300px;
     width: 31%;
-    font-size: 22px;
+    font-size: 18px;
     background-color: var(--color2);
     overflow: hidden;
     color: var(--color1);

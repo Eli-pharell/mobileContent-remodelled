@@ -17,7 +17,7 @@
     padding:0;
     border: 0;
     margin: 0;
-    font-family: "Farsan", cursive;
+    font-family: 'Calibri','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     -webkit-tap-highlight-color: rgb(255, 255, 255,0);
     -webkit-focus-ring-color: rgb(255, 255, 255,0);
     scroll-behavior: smooth;
