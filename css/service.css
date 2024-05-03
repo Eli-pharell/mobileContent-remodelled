@@ -79,7 +79,7 @@ body.active{
     height:100vh;
     left: 0;
     display: none;
-    z-index: 4;
+    z-index: 5;
     transition: 450ms ease-in-out;
 }
 
@@ -93,13 +93,13 @@ body.active{
 
 .policies{
     position: fixed;
-    width: 50%;
-    height: 30rem;
     visibility: hidden;
     background-color: white;
     padding: 2rem 2rem;
-    top: 10%;
-    right: 23%;
+    width: 80%;
+    height: 30rem;
+    top: 13%;
+    right: 8%;
     z-index: 5;
     text-align: justify;
     font-family: 'Times New Roman';
@@ -137,7 +137,7 @@ body.active{
     top: 5%;
     right: 5%;
     cursor: pointer;
-    z-index: 4;
+    z-index: 5;
     padding: 1rem 0;
     display: none;
 }
@@ -1733,8 +1733,8 @@ input:focus{
 
 
     .policies{
-        right: 5%;
-        width: 80%;
+        right: .5%;
+        width: 98%;
         height: 35rem;
     }
     

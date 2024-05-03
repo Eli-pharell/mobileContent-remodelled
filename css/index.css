@@ -69,7 +69,7 @@ body.active{
     height:100vh;
     left: 0;
     display: none;
-    z-index: 4;
+    z-index: 5;
     transition: 450ms ease-in-out;
 }
 
@@ -86,10 +86,10 @@ body.active{
     visibility: hidden;
     background-color: white;
     padding: 2rem 2rem;
-    width: 50%;
+    width: 80%;
     height: 30rem;
-    top: 10%;
-    right: 23%;
+    top: 13%;
+    right: 8%;
     z-index: 5;
     text-align: justify;
     font-family: 'Times New Roman';
@@ -1507,8 +1507,8 @@ footer{
 
 
     .policies{
-        right: 5%;
-        width: 80%;
+        right: .5%;
+        width: 98%;
         height: 35rem;
     }
     
