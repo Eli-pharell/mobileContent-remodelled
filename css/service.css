@@ -1868,6 +1868,10 @@ input:focus{
     .service-tab p{
         margin: 0 0 1rem 0;
     }
+
+    #service-request-statement p{
+        text-align: left;
+    }
     
     #request-form-container{
         display: none;
