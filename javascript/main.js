@@ -52,7 +52,7 @@ navBubble.onclick = () =>{
     overlay.classList.toggle("active");
     body.classList.toggle("active");
     navBubble.classList.add("active");
-    
+
     document.querySelector(".line1").classList.toggle('active');
     document.querySelector(".line2").classList.toggle('active');
     document.querySelector(".line3").classList.toggle('active');
@@ -152,7 +152,7 @@ let events = {
     },
 
     touch: {
-        down: "touchtart",
+        down: "touchstart",
         move: "touchmove",
         up: "touchend",
     }
@@ -192,6 +192,8 @@ navBubble.addEventListener(events[deviceType].down,
     moveElement = true;
 })
 
+
+//move elenment
 navBubble.addEventListener(events[deviceType].move,
 (e) =>{
     if(moveElement){
