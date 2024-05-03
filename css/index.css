@@ -1606,6 +1606,10 @@ footer{
         width: 80%;
     }
 
+    #shadow{
+        top: 70%;
+    }
+
     #customer-support{
         gap: 3rem;
         margin-top: 0;
