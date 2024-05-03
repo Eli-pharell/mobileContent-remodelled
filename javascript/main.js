@@ -139,15 +139,11 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
 }
 
 
-let rst = body.getBoundingClientRect();
-var rstT = rst.top,
-    rstL = rst.left,
-    rstR = rst.right,
-    rstB = rst.bottom;
 
 let initialX = 0,
     initialY = 0;
 let moveElement = false;
+
 
 //Events Object
 let events = {
@@ -208,11 +204,17 @@ navBubble.addEventListener(events[deviceType].move,
         let newX = !isTouchDevice() ?  e.clientX : e.touches[0].clientX;
         let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
 
-    navBubble.style.top = navBubble.offsetTop - (initialY - newY)*5 + "px";
-    navBubble.style.left = navBubble.offsetLeft - (initialX - newX)*5 + "px";
+    navBubble.style.top = navBubble.offsetTop - (initialY - newY)*10 + "px";
+    navBubble.style.left = navBubble.offsetLeft - (initialX - newX)*10 + "px";
 
     initialX = newX;
     initialY = newY;
+
+    drg = navBubble.getBoundingClientRect
+    drgT = drg.top;
+    drgL = drg.left;
+    drgB = drg.bottom;
+    drgR = drg.right;
     }
 });
 
@@ -230,10 +232,6 @@ navBubble.addEventListener(events[deviceType].up,
 (e) => {
     moveElement = false;
 })
-
-
-
-
 
 
 

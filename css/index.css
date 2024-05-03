@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Farsan&family=Kalam:wght@300;400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root{
     --color1:#F3D8C7;
     --color2:#7d1128;
@@ -8,7 +10,7 @@
     --color7: #f4ebe5;
     --aside-width:95px;
     --mobile-aside-width:28px;
-    --large-text:clamp(20px, 30px, 35px);
+    --large-text:clamp(30px, 35px, 40px);
     --dec-right:2.5%;
     --dec-top:12%;
 
@@ -19,7 +21,8 @@
     padding:0;
     border: 0;
     margin: 0;
-    font-family: 'Calibri','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Farsan", cursive;
+    font-weight: 550;
     -webkit-tap-highlight-color: rgb(255, 255, 255,0);
     -webkit-focus-ring-color: rgb(255, 255, 255,0);
     scroll-behavior: smooth;
@@ -345,12 +348,13 @@ section{
 #sect1{
     position: relative;
     padding: 7rem 1rem 0 1.5rem;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--color5);
 }
 
 #sect1 h1{
-    font-size: 40px;
+    font-size: 42px;
+    font-weight: 600;
     color: var(--color2);
 }
 
@@ -606,7 +610,7 @@ section{
     text-align: left;
     height: 300px;
     width: 31%;
-    font-size: 20px;
+    font-size: 22px;
     background-color: var(--color2);
     overflow: hidden;
     color: var(--color1);
@@ -1474,8 +1478,6 @@ footer{
         border-radius: 50%;
         z-index: 4;
         transition: 250ms ease;
-
-
     }
 
     #bubble.active{
