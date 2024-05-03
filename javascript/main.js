@@ -135,14 +135,36 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
     activeStatus.style.color = "orangered";
 }
 
-// var control = document.getElementById('control-centre');
 
-// control.addEventListener("touchmove", function(ev){
-//     var touchLocation = ev.targetTouches[0];
 
-//     control.style.left = touchLocation.pageX + 'px';
-//     control.style.top = touchLocation.pageY + 'px'
-// })
+var el, avail;
+
+
+
+function dragStart(evt){
+    el = evt.target;
+    
+    if(el.getAttribute('draggable')=='true'){
+        avail = 'available';
+    } else {
+        avail ='';
+}
+}
+
+function drag(evt){
+    if(avail == 'available'){
+        el.style.position = "absolute";
+        el.style.left = evt.touches[0].clientX-el.clientWidth/2;
+        el.style.top = evt.touches[0].clientY-el.clientHeight/2;
+    }
+    evt.preventDefault();
+}
+
+function drop(){
+
+}
+
+
 
 const input = document.getElementById("email-entry");
 input.disabled = true; //CLEAR THIS TO ACTIVATE NEWSLETTER SUBSCRIPTION INPUT.
