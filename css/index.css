@@ -348,13 +348,17 @@ section{
     position: relative;
     padding: 7rem 1rem 0 1.5rem;
     font-size: 26px;
-    color: var(--color5);
-    
+    color: var(--color5); 
 }
 
 #sect1 h1{
     font-size: 36px;
     color: var(--color2);
+}
+
+#sect1 p{
+    font-size: 20px;
+    margin: 2rem 1rem 1rem 1rem;
 }
 
 #call-to-action{
