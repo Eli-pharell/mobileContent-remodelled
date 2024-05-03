@@ -57,7 +57,7 @@ header{
     position: fixed;
     cursor: pointer;
     right: 5%;
-    top: 3%;
+    top: 2%;
     border: 1px solid var(--color3);
     padding: 8px 15px 6px 13px;
     border-radius: 50%;
@@ -65,6 +65,10 @@ header{
     transition: 250ms ease;
     opacity: 0;
     scale: 1.2;
+}
+
+#return.active{
+    opacity: 1;
 }
 
 #return i{
@@ -79,9 +83,7 @@ header{
     color: white;
 }
 
-#return.active{
-    opacity: 1;
-}
+
 
 section{
     position: relative;
@@ -107,7 +109,11 @@ section{
     margin: 1rem 0 0 0 ;
     padding: 1rem  0 0 0 ;
     background-color: white;
-    
+    transition: 600ms ease;
+}
+
+#song-table.active{
+    transform: translateY(-91vh);
 }
 
 #section1>*{
@@ -310,8 +316,16 @@ section{
     transition: 250ms;
 }
 
-.btn:not(:last-child){
-    margin: 0 10px 0 0;
+#index-btns{
+    cursor: pointer;
+    display: flex;
+    gap: 0 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+#index-btns i:hover{
+    color: var(--color3);
 }
 
 .btn{
@@ -349,6 +363,7 @@ td a:hover{
     }
 
     #song-table{
+        padding: 6rem 0 0 0;
         transition: 600ms ease;
         height: 91vh;
     }
@@ -396,13 +411,6 @@ td a:hover{
         font-size: 17px;
     }
 
-    #song-table{
-        padding: 6rem 0 0 0;
-    }
-
-    #index-btns{
-        padding: 0;
-    }
 
     #table-footer{
         display: flex;
@@ -482,13 +490,6 @@ td a:hover{
         padding: 4px 15px;
         font-size: 18px;
         transition: 250ms;
-    }
-
-    #index-btns{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0 .05rem;
     }
 
     #index-btns i:hover{

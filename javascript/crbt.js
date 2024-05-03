@@ -48,12 +48,12 @@ function displayIndexButtons(){
     preloadCalculations();
 
     pagination_buttons.remove()
-    pagination.append('<button class="btn" onclick = "prev()">Previous</button>');
+    pagination.append('<i class="fas fa-angle-left" onclick = "prev()"></i>');
 
     for(var i=1; i<=max_index; i++){
         pagination.append('<button index="'+i+'" class="btn" onclick = "indexPagination('+i+')" >'+i+'</button>');
     }
-    pagination.append('<button class="btn" onclick = "next()">Next</button>');
+    pagination.append('<i class="fas fa-angle-right" onclick = "next()"></i>');
     
 
     highlightIndexButton();
@@ -130,54 +130,27 @@ function indexPagination(index){
 }
 
 
-let cta = document.getElementById('call-to-action');
-let rtn = document.getElementById('return');
+
+
+const cta = document.getElementById('call-to-action');
+const rtn = document.getElementById('return');
+console.log(rtn);
 
 
 cta.onclick = () =>{
-    let test = document.getElementById("song-table");
-    let post = test.getBoundingClientRect();
+    let song = document.getElementById("song-table");
 
-    window.scrollBy(0, 550);
-    rtn.classList.add("active");
 
+    song.classList.add('active');
+    rtn.classList.add('active');
+}
+
+rtn.onclick = () => {
+    let song = document.getElementById("song-table");
+
+    song.classList.remove('active');
+    rtn.classList.remove('active');
 }
 
 
-rtn.onclick = () =>{
-    window.scrollBy(0, -550);
-    rtn.classList.remove("active");
-}
-
-if (window.matchMedia("(max-width: 480px)").matches){
-
-
-    cta.onclick = () =>{
-        let test = document.getElementById("song-table");
-        let post = test.getBoundingClientRect();
-    
-        test.classList.add('active');
-        rtn.classList.add("active");
-    
-    }
-    
-    
-    rtn.onclick = () =>{
-
-        let test = document.getElementById("song-table");
-        
-        test.classList.remove('active');
-        rtn.classList.remove("active");
-    }
-}
-
-
-
-
-
-
-
-
-
-console.log(post.top);
 
