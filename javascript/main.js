@@ -201,8 +201,8 @@ navBubble.addEventListener(events[deviceType].move,
         let newX = !isTouchDevice() ?  e.clientX : e.touches[0].clientX;
         let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
 
-    navBubble.style.top = navBubble.offsetTop - (initialY - newY)*2 + "px";
-    navBubble.style.left = navBubble.offsetLeft - (initialX - newX)*2 + "px";
+    navBubble.style.top = navBubble.offsetTop - (initialY - newY)*10 + "px";
+    navBubble.style.left = navBubble.offsetLeft - (initialX - newX)*10 + "px";
 
     initialX = newX;
     initialY = newY;
