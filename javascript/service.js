@@ -43,8 +43,8 @@ serv6.onclick = scroller.bind(null, 2150);
 
 
 if (window.matchMedia("(max-width: 480px)").matches) {
-    serv1.onclick = scroller.bind(null, 558 );
-    serv2.onclick = scroller.bind(null, 1422);
+    serv1.onclick = scroller.bind(null, 500 );
+    serv2.onclick = scroller.bind(null, 1350);
     serv3.onclick = scroller.bind(null, 2320);
     serv4.onclick = scroller.bind(null, 3200);
     serv5.onclick = scroller.bind(null, 3700);
