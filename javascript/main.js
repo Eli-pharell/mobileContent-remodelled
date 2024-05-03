@@ -140,98 +140,98 @@ if((BusinessTime.getMonth() == 0 && BusinessTime.getDate() == 1 || BusinessTime.
 
 
 
-let initialX = 0,
-    initialY = 0;
-let moveElement = false;
+// let initialX = 0,
+//     initialY = 0;
+// let moveElement = false;
 
 
-//Events Object
-let events = {
+// //Events Object
+// let events = {
 
-    mouse: {
-        down: 'mousedown',
-        move: 'mousemove',
-        up: 'mouseup',
-    },
+//     mouse: {
+//         down: 'mousedown',
+//         move: 'mousemove',
+//         up: 'mouseup',
+//     },
 
-    touch: {
-        down: "touchstart",
-        move: "touchmove",
-        up: "touchend",
-    }
+//     touch: {
+//         down: "touchstart",
+//         move: "touchmove",
+//         up: "touchend",
+//     }
     
-};
+// };
 
 
 
-let deviceType = "";
+// let deviceType = "";
 
-//Detect touch device
+// //Detect touch device
 
-const isTouchDevice = () =>{
-    try{
-        //try to create touchEvent.
+// const isTouchDevice = () =>{
+//     try{
+//         //try to create touchEvent.
 
-        document.createEvent("TouchEvent");
-        deviceType = "touch";
-        return true;
-    } catch(e){
-        deviceType = "mouse";
-        return false;
-    }
-}
+//         document.createEvent("TouchEvent");
+//         deviceType = "touch";
+//         return true;
+//     } catch(e){
+//         deviceType = "mouse";
+//         return false;
+//     }
+// }
 
-isTouchDevice();
-
-
-//start touch start
-navBubble.addEventListener(events[deviceType].down,
-(e) => {
-    e.preventDefault();
-
-    initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
-    initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
-
-    moveElement = true;
-})
+// isTouchDevice();
 
 
-//move elenment
-navBubble.addEventListener(events[deviceType].move,
-(e) =>{
-    if(moveElement){
-        e.preventDefault();
-        let newX = !isTouchDevice() ?  e.clientX : e.touches[0].clientX;
-        let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+// //start touch start
+// navBubble.addEventListener(events[deviceType].down,
+// (e) => {
+//     e.preventDefault();
 
-    navBubble.style.top = navBubble.offsetTop - (initialY - newY)*10 + "px";
-    navBubble.style.left = navBubble.offsetLeft - (initialX - newX)*10 + "px";
+//     initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+//     initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
 
-    initialX = newX;
-    initialY = newY;
-
-    drg = navBubble.getBoundingClientRect
-    drgT = drg.top;
-    drgL = drg.left;
-    drgB = drg.bottom;
-    drgR = drg.right;
-    }
-});
+//     moveElement = true;
+// })
 
 
-//touch end
+// //move elenment
+// navBubble.addEventListener(events[deviceType].move,
+// (e) =>{
+//     if(moveElement){
+//         e.preventDefault();
+//         let newX = !isTouchDevice() ?  e.clientX : e.touches[0].clientX;
+//         let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
 
-navBubble.addEventListener(events[deviceType].up,
-(stopMovement = (e) => {
-    moveElement = false
-}));
+//     navBubble.style.top = navBubble.offsetTop - (initialY - newY)*10 + "px";
+//     navBubble.style.left = navBubble.offsetLeft - (initialX - newX)*10 + "px";
 
-navBubble.addEventListener("mouseleave", stopMovement);
+//     initialX = newX;
+//     initialY = newY;
 
-navBubble.addEventListener(events[deviceType].up,
-(e) => {
-    moveElement = false;
-})
+//     drg = navBubble.getBoundingClientRect
+//     drgT = drg.top;
+//     drgL = drg.left;
+//     drgB = drg.bottom;
+//     drgR = drg.right;
+//     }
+// });
+
+
+// //touch end
+
+// navBubble.addEventListener(events[deviceType].up,
+// (stopMovement = (e) => {
+//     moveElement = false
+// }));
+
+// navBubble.addEventListener("mouseleave", stopMovement);
+
+// navBubble.addEventListener(events[deviceType].up,
+// (e) => {
+//     moveElement = false;
+// })
 
 
 
