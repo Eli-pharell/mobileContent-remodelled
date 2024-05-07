@@ -1820,11 +1820,11 @@ input:focus{
     }
 
     .service-btn-alt{
-        bottom: clamp(-6%,-5%,-1%);
+        bottom: clamp(-6%,-4%,-1%);
     }
     
     .service-option{
-        height:650px;
+        height:680px;
     }
 
     .service-image{
@@ -1833,7 +1833,7 @@ input:focus{
 
     .opt2 button,
     .opt3 button{
-        bottom: clamp(2%,4%,5%);
+        bottom: clamp(-2%,0%,2%);
     }
 
 
